@@ -1,0 +1,23 @@
+/***********************************************/
+/************** HEADER STYLES ******************/
+/***********************************************/
+.btn-lg {
+    height: 80px;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar .navbar-nav {
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+}
+
