@@ -1,5 +1,17 @@
+.container-main {
+    margin-bottom: 140px;
+}
+
 /***********************************************/
 /************** HEADER STYLES ******************/
+/***********************************************/
+#header-logo {
+    text-align: center;
+}
+
+
+/***********************************************/
+/************ NAVIGATION STYLES ****************/
 /***********************************************/
 .btn-lg {
     height: 80px;
@@ -21,3 +33,29 @@
     float:none;
 }
 
+/***********************************************/
+/*********** PROFILE PAGE STYLES ***************/
+/***********************************************/
+#profile-img {
+    width: 100%;
+}
+
+    /************** NAME TAG STYLES ****************/
+    .name-tag {
+        position: relative;
+        text-align: center;
+    }
+
+    .name-tag img {
+        width: 90%;
+    }
+
+    .name-tag span {
+        position: absolute;
+        display: block;
+        z-index: 100;
+        width: 100%;
+        text-align: center;
+        top: 40%;
+        font-size: 5vw
+    }

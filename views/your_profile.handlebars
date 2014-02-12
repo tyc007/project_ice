@@ -24,13 +24,12 @@
     <!-- Header -->
     <div class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="row">
-            <div class="col-xs-4 pull-left">
+            <div class="col-xs-4 pull-left" >
             </div>
-            <div class="navbar-header navbar-nav col-xs-4" style="text-align: center">
+            <div class="col-xs-4" id="header-logo">
                 <a><h1>HELLO<h1></a>
             </div>
             <div class="col-xs-4">
-                <a class="btn btn-primary pull-right" href="#" style="margin: 1em auto">Edit</a>
             </div>
         </div>
     </div>
@@ -42,40 +41,43 @@
                 <a href="#" class="btn btn-primary btn-lg">Find Friends</a>
                 <a href="#" class="btn btn-primary btn-lg">Notifications</a>
                 <a href="#" class="btn btn-primary btn-lg">Friends</a>
-                <a href="#" class="btn primary btn-lg">Profile</a>
+                <a href="#" class="btn btn-primary btn-lg">Profile</a>
             </div>
         </div>
     </div>
 
 
-    <div class ="container">
+    <div class ="container-main">
         <div class="row">
             <div class="col-xs-5">
-                <img class=".img-responsive"src="profile-square.png" style="width: 100%"/>
+                <img class=".img-responsive" id="profile-img" src="images/profile-square.png"/>
             </div>
             <div class="col-xs-7">
-                <div>
-                    <img clas=".img-responsive" src="nametag.png" style="width: 90%;">
+                <div class="name-tag">
+                    <img class=".img-responsive" src="images/nametag.png">
 					<span><h1>John Doe</h1></span>
                 </div>
 
             </div>
         </div>
-        <div class="row col-xs-12">
-            <h4>Computer Science Student @ UC San Diego</h4>
-            <p>Lorem ipsum dolor sit amet, in doming dictas cotidieque mei, vix dicunt viderer cotidieque te, mea sanctus facilisis constituam eu. Quo errem essent in, vim cu soluta iuvaret, eam et unum noluisse signiferumque. Pro te brute ubique definitiones. Ut impetus accumsan volutpat sed.</p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-            </ul>
+        <div class="container">
+            <div class="row col-xs-12">
+                <h4>Computer Science Student @ UC San Diego</h4>
+                <p>Lorem ipsum dolor sit amet, in doming dictas cotidieque mei, vix dicunt viderer cotidieque te, mea sanctus facilisis constituam eu. Quo errem essent in, vim cu soluta iuvaret, eam et unum noluisse signiferumque. Pro te brute ubique definitiones. Ut impetus accumsan volutpat sed.</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
+            </div>
+            <div class="row col-xs-12">
+                <h4>BADGES</h4>
+                <img src="images/badge.png"/>
+                <img src="images/badge.png"/>
+                <img src="images/badge.png"/>
+            </div>
         </div>
-        <div class="row col-xs-12">
-            <h4>BADGES</h4>
-            <img src="badge.png"/>
-            <img src="badge.png"/>
-            <img src="badge.png"/>
-        </div>
+
 </body>
 <script src="js/jquery-1.11.0.js"></script>
 <script src="js/bootstrap.js"></script>
