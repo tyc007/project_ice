@@ -27,9 +27,11 @@
             <div class="col-xs-4 pull-left" >
             </div>
             <div class="col-xs-4" id="header-logo">
-                <a><h1>HELLOHI<h1></a>
+                <a>HELLO</a>
             </div>
-            <div class="col-xs-4">
+            <!-- only needed for profile pages -->
+            <div class="col-xs-4 pull-right">
+                <a href="#" class="btn btn-primary pull-right">EDIT</a>
             </div>
         </div>
     </div>
@@ -38,17 +40,17 @@
     <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
         <div>
             <div class="btn-group-lg btn-group-justified">
-                <a href="#" class="btn btn-primary btn-lg">Find Friends</a>
-                <a href="#" class="btn btn-primary btn-lg">Notifications</a>
-                <a href="#" class="btn btn-primary btn-lg">Friends</a>
-                <a href="#" class="btn btn-primary btn-lg">Profile</a>
+                <a href="#" class="btn btn-default btn-lg">Find Friends</a>
+                <a href="#" class="btn btn-default btn-lg">Notifications</a>
+                <a href="#" class="btn btn-default btn-lg">Friends</a>
+                <a href="#" class="btn btn-default btn-lg">Profile</a>
             </div>
         </div>
     </div>
 
 
     <div class ="container-main">
-        <div class="row">
+        <div class="row profile-content">
             <div class="col-xs-5">
                 <img class=".img-responsive" id="profile-img" src="images/profile-square.png"/>
             </div>
@@ -60,7 +62,7 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container profile-content">
             <div class="row col-xs-12">
                 <h4>Computer Science Student @ UC San Diego</h4>
                 <p>Lorem ipsum dolor sit amet, in doming dictas cotidieque mei, vix dicunt viderer cotidieque te, mea sanctus facilisis constituam eu. Quo errem essent in, vim cu soluta iuvaret, eam et unum noluisse signiferumque. Pro te brute ubique definitiones. Ut impetus accumsan volutpat sed.</p>
@@ -70,11 +72,10 @@
                     <li>Lorem ipsum dolor sit amet</li>
                 </ul>
             </div>
-            <div class="row col-xs-12">
-                <h4>BADGES</h4>
-                <img src="images/badge.png"/>
-                <img src="images/badge.png"/>
-                <img src="images/badge.png"/>
+            <div class="row col-xs-12 profile-content" style="text-align: center;">
+                <img class="medal" src="images/badge.png"/>
+                <img class="medal" src="images/badge.png"/>
+                <img class="medal" src="images/badge.png"/>
             </div>
         </div>
 
