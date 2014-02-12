@@ -1,5 +1,19 @@
+/***********************************************/
+/************** GENERAL STYLES *****************/
+/***********************************************/
+
+body {
+    color: #000000;
+}
+
+h1,h2,h3,h4,h5 {
+    color: #000000;
+}
+
 .container-main {
     margin-bottom: 140px;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 /***********************************************/
@@ -7,6 +21,17 @@
 /***********************************************/
 #header-logo {
     text-align: center;
+}
+
+#header-logo a {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 2px;
+}
+
+.navbar .col-xs-4 .pull-right, .navbar .col-xs-4 .pull-left {
+    margin: 10px;
 }
 
 
@@ -36,8 +61,17 @@
 /***********************************************/
 /*********** PROFILE PAGE STYLES ***************/
 /***********************************************/
+.profile-content {
+    margin: 20px auto;
+}
+
 #profile-img {
     width: 100%;
+}
+
+.medal {
+    width: 60px;
+    margin: 1em;
 }
 
     /************** NAME TAG STYLES ****************/
