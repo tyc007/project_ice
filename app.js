@@ -13,6 +13,7 @@ var index = require('./routes/index');
 // var user = require('./routes/user');
 
 var add = require('./routes/add');
+var find_people = require('./routes/find_people');
 var login = require('./routes/login');
 var my_friends = require('./routes/my_friends');
 var signup = require('./routes/signup');
@@ -47,6 +48,7 @@ app.get('/', index.view);
 // app.get('/users', user.list);
 
 app.get('/add', add.addFriend);
+app.get('/find_people', find_people.view);
 app.get('/login', login.view);
 app.get('/my_friends', my_friends.view);
 app.get('/signup', signup.view);

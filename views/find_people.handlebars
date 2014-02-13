@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>My Friends</title>
+    <title>Find People</title>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -14,7 +14,7 @@
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link href="css/list-view.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-   <!-- <link href="css/style.css" rel="stylesheet"> -->
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -31,21 +31,21 @@
 <!-- Header End -->
 
 <div class="container">
-    <h1>My Friends</h1>
+    <h1>Find People</h1>
     <hr>
-        {{#each friends}}
+    {{#each friends}}
         <div class="pull-left friend-row">
             <div class=" col-xs-2" id="pic-{{name}}">
-                <img src="/images/profile-square.png" class="img-responsive img-rounded">
+                <img src={{imageURL}} class="img-responsive img-rounded">
             </div>
             <div class="col-xs-10" id="{{name}}">
                 <a href="/user_profile">
-                <div class="row name">{{name}}</div>
-                <div class="row description">"{{description}}"</div>
+                    <div class="row name">{{name}}</div>
+                    <div class="row description">"{{description}}"</div>
                 </a>
             </div>
         </div>
-        {{/each}}
+    {{/each}}
 
 </div>
 
@@ -53,7 +53,7 @@
 <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <div>
         <div class="btn-group-lg btn-group-justified">
-            <a href="/find_friends" class="btn btn-default btn-lg">Find Friends</a>
+            <a href="/find_people" class="btn btn-default btn-lg">Find Friends</a>
             <a href="#" class="btn btn-default btn-lg">Notifications</a>
             <a href="/my_friends" class="btn btn-default btn-lg">Friends</a>
             <a href="/your_profile" class="btn btn-default btn-lg">Profile</a>
