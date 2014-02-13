@@ -16,64 +16,93 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link href="css/hci-friends.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+
 <!-- Header -->
 <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="navbar-header navbar-nav">
-        <h3>HELLO</h3>
-    </div>
-    <a class="btn btn-primary pull-right" href="#">Your Profile</a>
-</div>
-
-<!-- Fixed bottom navbar -->
-<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-    <div>
-        <div class="btn-group-lg btn-group-justified">
-            <a href="#" class="btn btn-primary btn-lg">Find Friends</a>
-            <a href="#" class="btn btn-primary btn-lg">Notifications</a>
-            <a href="#" class="btn btn-primary btn-lg">Friends</a>
-            <a href="#" class="btn btn-primary btn-lg">Profile</a>
+    <div class="row">
+        <div class="col-xs-4 pull-left" >
+            <a class="pull-left" href="#">Back</a>
         </div>
-    </div><!--/ .container -->
+        <div class="col-xs-4" id="header-logo">
+            <a>HELLO</a>
+        </div>
+    </div>
 </div>
 
 
-<div class ="container">
-    <div class="row">
-        <a href="#" class="btn btn-default btn-lg">Say Hello</a>
+<div class ="container-main">
+    <div class="row profile-content">
+        <a href="#" class="btn btn-primary btn-lg contact-button" data-toggle="modal" data-target="#request-sent">Break the Ice!</a>
     </div>
-    <div class="row">
+
+    <!-- Alert Message -->
+    <div id="request-sent" class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <p>You broke the ice!</p>
+                <p>+1 Social Point</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row profile-content">
         <div class="col-xs-5">
-            <img class=".img-responsive"src="profile-square.png"/>
+            <img class=".img-responsive" id="profile-img" src="images/profile-square.png"/>
         </div>
         <div class="col-xs-7">
-            <div>
-                <img clas=".img-responsive" src="nametag.png">
-						<span><h1>John Doe</h1></span>
+            <div class="name-tag">
+                <img class=".img-responsive" src="images/nametag.png">
+                <span><h1>John Doe</h1></span>
             </div>
 
         </div>
     </div>
-    <div class="row col-xs-12">
-        <h4>Computer Science Student @ UC San Diego</h4>
-        <p>Lorem ipsum dolor sit amet, in doming dictas cotidieque mei, vix dicunt viderer cotidieque te, mea sanctus facilisis constituam eu. Quo errem essent in, vim cu soluta iuvaret, eam et unum noluisse signiferumque. Pro te brute ubique definitiones. Ut impetus accumsan volutpat sed.</p>
-        <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Lorem ipsum dolor sit amet</li>
-        </ul>
+    <div class="container profile-content">
+        <div class="row col-xs-12">
+            <h4>Computer Science Student @ UC San Diego</h4>
+            <p>Lorem ipsum dolor sit amet, in doming dictas cotidieque mei, vix dicunt viderer cotidieque te, mea sanctus facilisis constituam eu. Quo errem essent in, vim cu soluta iuvaret, eam et unum noluisse signiferumque. Pro te brute ubique definitiones. Ut impetus accumsan volutpat sed.</p>
+            <ul>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+            </ul>
+        </div>
+        <div class="row col-xs-12 profile-content" style="text-align: center">
+            <h4>Popularity Points</h4>
+            <p style="font-size: 50px">1,128</p>
+        </div>
+        <div class="row col-xs-12 profile-content" style="text-align: center;">
+            <img class="medal" src="images/badge.png"/>
+            <img class="medal" src="images/badge.png"/>
+            <img class="medal" src="images/badge.png"/>
+        </div>
     </div>
-    <div class="row col-xs-12">
-        <h4>BADGES</h4>
-        <img src="badge.png"/>
-        <img src="badge.png"/>
-        <img src="badge.png"/>
+
+    <!-- Fixed bottom navbar -->
+    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div>
+            <div class="btn-group-lg btn-group-justified">
+                <a href="#" class="btn btn-default btn-lg">Find Friends</a>
+                <a href="#" class="btn btn-default btn-lg">Notifications</a>
+                <a href="#" class="btn btn-default btn-lg">Friends</a>
+                <a href="#" class="btn btn-default btn-lg">Profile</a>
+            </div>
+        </div>
     </div>
 </body>
 <script src="js/jquery-1.11.0.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/hci-friends.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.alert .close').live("click", function(e) {
+            $(this).parent().hide();
+        });
+    });
+</script>
 
 </html>
