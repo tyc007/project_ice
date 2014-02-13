@@ -19,8 +19,9 @@ var login = require('./routes/login');
 var messages = require('./routes/messages');
 var my_friends = require('./routes/my_friends');
 var signup = require('./routes/signup');
-var your_profile = require('./routes/your_profile');
 var user_profile = require('./routes/user_profile');
+var user_profile_contact = require('./routes/user_profile_contact');
+var your_profile = require('./routes/your_profile');
 
 var app = express();
 
@@ -56,8 +57,10 @@ app.get('/login', login.view);
 app.get('/messages', messages.view);
 app.get('/my_friends', my_friends.view);
 app.get('/signup', signup.view);
-app.get('/your_profile', your_profile.view);
 app.get('/user_profile', user_profile.view);
+app.get('/user_profile_contact', user_profile_contact.view);
+app.get('/your_profile', your_profile.view);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
