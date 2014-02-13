@@ -36,7 +36,9 @@
 
 <div class ="container-main">
     <div class="row profile-content">
-        <a href="#" class="btn btn-primary btn-lg contact-button" data-toggle="modal" data-target="#request-sent">Break the Ice!</a>
+        <button id="submit-request-btn" class="btn btn-primary btn-lg contact-button" data-toggle="modal" data-target="#request-sent">
+            Break the Ice!
+        </button>
     </div>
 
     <!-- Alert Message -->
@@ -102,6 +104,7 @@
         $('.alert .close').live("click", function(e) {
             $(this).parent().hide();
         });
+
     });
 </script>
 
