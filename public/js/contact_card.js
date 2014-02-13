@@ -5,16 +5,13 @@ $(document).ready(function() {
     initializePage();
 })
 
-$("#dialog").dialog({ autoOpen: false });
-
+/*
 // Contact User Button that changes after click
 $( ".contact-button" ).click(function() {
     console.log(this);
-    $("#dialog").dialog('open');
-    return false;
-
+    $('#contactModal').modal('toggle')
 });
-
+*/
 
 
 
