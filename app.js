@@ -13,8 +13,10 @@ var index = require('./routes/index');
 // var user = require('./routes/user');
 
 var add = require('./routes/add');
+var alerts = require('./routes/alerts');
 var find_people = require('./routes/find_people');
 var login = require('./routes/login');
+var messages = require('./routes/messages');
 var my_friends = require('./routes/my_friends');
 var signup = require('./routes/signup');
 var your_profile = require('./routes/your_profile');
@@ -48,8 +50,10 @@ app.get('/', index.view);
 // app.get('/users', user.list);
 
 app.get('/add', add.addFriend);
+app.get('/alerts', alerts.view);
 app.get('/find_people', find_people.view);
 app.get('/login', login.view);
+app.get('/messages', messages.view);
 app.get('/my_friends', my_friends.view);
 app.get('/signup', signup.view);
 app.get('/your_profile', your_profile.view);

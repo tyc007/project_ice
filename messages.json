@@ -1,0 +1,20 @@
+{
+    "messages": [
+        {
+            "name": "Doug Engelbart",
+            "message": "Hey! I'm in CSE170 too! Do you have a group yet?"
+        },
+        {
+            "name": "Ivan Sutherland",
+            "message": "Hi! :)"
+        },
+        {
+            "name": "Lucy Suchman",
+            "message": "I think I see you! lol"
+        },
+        {
+            "name": "Vannevar Bush",
+            "message": "Wanna meet up?"
+        }
+    ]
+}
