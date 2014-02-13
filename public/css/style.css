@@ -50,8 +50,8 @@ h1,h2,h3,h4,h5 {
         z-index: 100;
         width: 100%;
         text-align: center;
-        top: 40%;
-        font-size: 5vw;
+        top: 25%;
+        font-size: 20px;
         margin: 1em auto;
     }
 

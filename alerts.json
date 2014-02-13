@@ -1,0 +1,24 @@
+{
+    "alerts": [
+        {
+            "name": "Doug Engelbart",
+            "alert": "says hello!"
+        },
+        {
+            "name": "Ivan Sutherland",
+            "alert": "says hello!"
+        },
+        {
+            "name": "Lucy Suchman",
+            "alert": "says hello!"
+        },
+        {
+            "name": "Vannevar Bush",
+            "alert": "says hello!"
+        },
+        {
+            "name": "Grace Hopper",
+            "alert": "says hello!"
+        }
+    ]
+}
