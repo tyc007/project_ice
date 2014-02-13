@@ -8,3 +8,7 @@
 .alerts-tab {
     height: 60px;
 }
+
+.name, .description, .alerts, .messages {
+    color: #000000;
+}

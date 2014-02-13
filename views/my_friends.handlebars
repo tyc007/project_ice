@@ -29,35 +29,37 @@
     </div>
 </div>
 <!-- Header End -->
-
-<div class="container">
-    <h1>My Friends</h1>
-    <hr>
+<div class="container-main">
+    <div class="container">
+        <h1>My Friends</h1>
+        <hr>
         {{#each friends}}
-        <a href="/user_profile">
-        <div class="pull-left friend-row">
-            <div class=" col-xs-2" id="pic-{{name}}">
-                <img src="/images/profile-square.png" class="img-responsive img-rounded">
-            </div>
+            <a href="/user_profile">
+                <div class="pull-left friend-row">
+                    <div class=" col-xs-2" id="pic-{{name}}">
+                        <img src="/images/profile-square.png" class="img-responsive img-rounded">
+                    </div>
 
-            <div class="col-xs-10" id="{{name}}">
-                <div class="row name">{{name}}</div>
-                <div class="row description">"{{description}}"</div>
-            </div>
+                    <div class="col-xs-10" id="{{name}}">
+                        <div class="row name">{{name}}</div>
+                        <div class="row description">"{{description}}"</div>
+                    </div>
 
-        </div>
-        </a>
+                </div>
+            </a>
         {{/each}}
 
+    </div>
 </div>
+
 
 <!-- Fixed bottom navbar start-->
 <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <div>
         <div class="btn-group-lg btn-group-justified">
-            <a href="/find_people" class="btn btn-default btn-lg">Find Friends</a>
+            <a href="/find_people" class="btn btn-default btn-lg">Find People</a>
             <a href="/alerts" class="btn btn-default btn-lg">Notifications</a>
-            <a href="/my_friends" class="btn btn-default btn-lg">Friends</a>
+            <a href="/my_friends" class="btn btn-primary btn-lg">Friends</a>
             <a href="/your_profile" class="btn btn-default btn-lg">Profile</a>
         </div>
     </div>
