@@ -12,11 +12,32 @@
     <![endif]-->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <link href="css/hci-friends.css" rel="stylesheet">
+    <link href="css/list.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+<div class="container">
+    <h1>My Friends</h1>
 
+        {{#each friends}}
+        <div class="pull-left friend-row">
+            <div class=" col-xs-2" id="pic-{{name}}">
+                <img src={{imageURL}} class="img-responsive img-rounded">
+            </div>
+            <div class="pull-right col-xs-10" id="{{name}}">
+                <a href="/user_profile">
+                <div class="row name">{{name}}</div>
+                <div class="row description">"{{description}}"</div>
+                </a>
+            </div>
+        </div>
+        {{/each}}
+
+</div>
 </body>
+
+<script src="js/jquery-1.11.0.js"></script>
+<script rc="js/bootstrap.js"></script>
+<script src="js/hci-friends.js"></script>
 </html>

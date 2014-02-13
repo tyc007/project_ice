@@ -6,10 +6,10 @@ $(document).ready(function() {
 })
 
 $( ".friend_names" ).click(function() {
-	var name 	= $(this).text();
-	var newName = anagrammedName(name);
-	$(this).text(newName);
-	console.log("Something clicked.");
+    var name 	= $(this).text();
+    var newName = anagrammedName(name);
+    $(this).text(newName);
+    console.log("Something clicked.");
 });
 
 
