@@ -34,53 +34,51 @@
 </div>
 
 
-<div class ="container-main">
-    <div class="row profile-content">
-        <button id="submit-request-btn" class="btn btn-primary btn-lg contact-button" data-toggle="modal" data-target="#request-sent">
-            Break the Ice!
-        </button>
-    </div>
+    <div class ="container-main">
+        <div class="alert alert-success" id="request-sent">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <strong>Success! You broke the ice!</strong>
+            <p>+1 Social Point</p>
+        </div>
 
-    <!-- Alert Message -->
-    <div id="request-sent" class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <p>You broke the ice!</p>
-                <p>+1 Social Point</p>
+
+        <div class="row profile-content">
+            <button class="btn btn-primary btn-lg contact-button" data-toggle="modal" data-target="#request-sent">
+                Break the Ice!
+            </button>
+        </div>
+
+        <div class="row profile-content">
+            <div class="col-xs-5">
+                <img class=".img-responsive" id="profile-img" src="images/profile-square.png"/>
+            </div>
+            <div class="col-xs-7">
+                <div class="name-tag">
+                    <img class=".img-responsive" src="images/nametag.png">
+                    <span><h1>John Doe</h1></span>
+                </div>
+
             </div>
         </div>
-    </div>
-
-    <div class="row profile-content">
-        <div class="col-xs-5">
-            <img class=".img-responsive" id="profile-img" src="images/profile-square.png"/>
-        </div>
-        <div class="col-xs-7">
-            <div class="name-tag">
-                <img class=".img-responsive" src="images/nametag.png">
-                <span><h1>John Doe</h1></span>
+        <div class="container profile-content">
+            <div class="row col-xs-12">
+                <h4>Computer Science Student @ UC San Diego</h4>
+                <p>Lorem ipsum dolor sit amet, in doming dictas cotidieque mei, vix dicunt viderer cotidieque te, mea sanctus facilisis constituam eu. Quo errem essent in, vim cu soluta iuvaret, eam et unum noluisse signiferumque. Pro te brute ubique definitiones. Ut impetus accumsan volutpat sed.</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                    <li>Lorem ipsum dolor sit amet</li>
+                </ul>
             </div>
-
-        </div>
-    </div>
-    <div class="container profile-content">
-        <div class="row col-xs-12">
-            <h4>Computer Science Student @ UC San Diego</h4>
-            <p>Lorem ipsum dolor sit amet, in doming dictas cotidieque mei, vix dicunt viderer cotidieque te, mea sanctus facilisis constituam eu. Quo errem essent in, vim cu soluta iuvaret, eam et unum noluisse signiferumque. Pro te brute ubique definitiones. Ut impetus accumsan volutpat sed.</p>
-            <ul>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-            </ul>
-        </div>
-        <div class="row col-xs-12 profile-content" style="text-align: center">
-            <h4>Social Points</h4>
-            <p style="font-size: 50px">1,128</p>
-        </div>
-        <div class="row col-xs-12 profile-content" style="text-align: center;">
-            <img class="medal" src="images/badge.png"/>
-            <img class="medal" src="images/badge.png"/>
-            <img class="medal" src="images/badge.png"/>
+            <div class="row col-xs-12 profile-content" style="text-align: center">
+                <h4>Social Points</h4>
+                <p style="font-size: 50px">1,128</p>
+            </div>
+            <div class="row col-xs-12 profile-content" style="text-align: center;">
+                <img class="medal" src="images/badge.png"/>
+                <img class="medal" src="images/badge.png"/>
+                <img class="medal" src="images/badge.png"/>
+            </div>
         </div>
     </div>
 
@@ -95,17 +93,11 @@
             </div>
         </div>
     </div>
+
+
 </body>
 <script src="js/jquery-1.11.0.js"></script>
 <script src="js/bootstrap.js"></script>
-<script src="js/hci-friends.js"></script>
-<script>
-    $(document).ready(function(){
-        $('.alert .close').live("click", function(e) {
-            $(this).parent().hide();
-        });
-
-    });
-</script>
+<script src="js/user_profile.js"></script>
 
 </html>
