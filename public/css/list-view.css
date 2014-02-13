@@ -12,3 +12,11 @@
 .name, .description, .alerts, .messages {
     color: #000000;
 }
+
+.name {
+    font-size: 20px;
+}
+
+.alerts {
+    font-size: 14px;
+}

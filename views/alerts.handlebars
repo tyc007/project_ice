@@ -45,13 +45,16 @@
                     <img src="/images/profile-square.png" class="img-responsive img-rounded">
                 </div>
 
-                <div class="col-xs-6" id="{{name}}">
-                    <div class="row name">{{name}} says hello!</div>
+                <div class="col-xs-5" id="{{name}}">
+                    <div class="row name">{{name}} </div>
+                    <!--<p class="alerts">says hello!</p>-->
                 </div>
 
-                <div class="col-xs-4">
-                    <button class="btn btn-success">Say Hi</button>
-                    <button class="btn btn-danger">Ignore</button>
+                <div class="col-xs-5 pull-right">
+                    <a href="#"><button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="top" data-content="Hooray! You have a new friend! +1 Social Point.">
+                        Say Hi!
+                    </button></a>
+                    <a href="#"><button class="btn btn-danger">Ignore</button></a>
                 </div>
 
             </div>
