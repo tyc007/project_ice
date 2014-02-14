@@ -1,0 +1,76 @@
+{
+	"friends": [
+		{
+			"name": "Scarlett Lawrence",
+			"message": "hey, how are you?",
+			"title": "HCI student at UCSD",
+			"profile": "I like to design cool websites!",
+			"interest1": "Basketball",			
+			"interest2": "Reading",
+			"interest3": "Surfing"
+		},
+		{
+			"name": "Taylor Saldana",
+			"message": "are you taking cse 8a?",
+			"title": "Computer Science student at UCSD",
+			"profile": "I like to code my own apps",
+			"interest1": "Coding",			
+			"interest2": "Blogging",
+			"interest3": "Baking"
+		},
+		{
+			"name": "Isla Swift",
+			"message": "research opportunities this wednesday!",
+			"title": "Professor of Psychology",
+			"profile": "I am interested in the human visual system",
+			"interest1": "Hiking",			
+			"interest2": "Traveling",
+			"interest3": "Stargazing"
+		},
+		{
+			"name": "Leonardo Bale",
+			"message": "want to come with me to the center?",
+			"title": "Biology student at UCSD",
+			"profile": "I like volunteering at hospitals",	
+			"interest1": "Canoeing",			
+			"interest2": "Photography",
+			"interest3": "Surfing"		
+		},
+		{
+			"name": "Jennifer Adams",
+			"message": "want to hand out soon?",
+			"title": "Computer Science student at UCSD",
+			"profile": "I enjoy surfing",
+			"interest1": "Gardening",			
+			"interest2": "Knitting",
+			"interest3": "Volleyball"
+		},
+		{
+			"name": "Zoe Fisher",
+			"message": "will you be going to the party?",
+			"title": "Economics student at UCSD",
+			"profile": "I like long walks on the beach!",
+			"interest1": "Scrapbooking",			
+			"interest2": "Swimming",
+			"interest3": "Drawing"			
+		},
+		{
+			"name": "Christian DiCaprio",
+			"message": "hey, how are you?",
+			"title": "Literature student at UCSD",
+			"profile": "I love soccer!",
+			"interest1": "Gaming",			
+			"interest2": "Yoga",
+			"interest3": "Soccer"
+		},
+		{
+			"name": "Amy Johansson",
+			"message": "come join the Cog. Sci. club this friday",
+			"title": "Professor of Cognitive Science",
+			"profile": "Interested in the effects of drugs on the mind",
+			"interest1": "Scuba Diving",			
+			"interest2": "Skating",
+			"interest3": "Skiing"
+		}
+	]
+}
