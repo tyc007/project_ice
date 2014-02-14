@@ -38,29 +38,31 @@
 
 
     <div class="container-main">
-        {{#each alerts}}
-            <a href="/user_profile">
-            <div class="pull-left friend-row">
-                <div class=" col-xs-3" id="pic-{{name}}">
-                    <img src="/images/profile-square.png" class="img-rounded list-image">
-                </div>
+        <div class="list-container">
+            {{#each alerts}}
+                <a href="/user_profile">
+                    <div class="pull-left friend-row">
+                        <div class=" col-xs-3" id="pic-{{name}}">
+                            <img src="/images/profile-square.png" class="img-rounded list-image">
+                        </div>
 
-                <div class="col-xs-5" id="{{name}}">
-                    <div class="row name">{{name}} </div>
-                    <div class="row alert">{{alert}}</div>
-                </div>
+                        <div class="col-xs-5" id="{{name}}">
+                            <div class="row name">{{name}} </div>
+                            <div class="row alert">{{alert}}</div>
+                        </div>
 
-                <div class="col-xs-4 pull-right" id="response-btns">
-                    <a href="#"><button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="top" data-content="Hooray! You have a new friend! +1 Social Point.">
-                        Say Hello
-                    </button></a>
-                    <a href="#"><button class="btn btn-danger">X</button></a>
-                </div>
+                        <div class="col-xs-4 pull-right" id="response-btns">
+                            <a id="accept-btn" href="#"><button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="top" data-content="Hooray! You have a new friend! +1 Social Point.">
+                                Say Hello
+                            </button></a>
+                            <a href="#"><button class="btn btn-danger">X</button></a>
+                        </div>
 
-            </div>
-            </a>
-        {{/each}}
-
+                    </div>
+                </a>
+            {{/each}}
+        </div>
+        <h1 style="color:white">Hello</h1>
     </div>
 
 
@@ -69,8 +71,8 @@
 <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <div>
         <div class="btn-group-lg btn-group-justified">
-            <a href="/find_people" class="btn btn-default btn-lg">Find People</a>
-            <a href="/alerts" class="btn btn-primary btn-lg">Notifications</a>
+            <a href="/find_people" class="btn btn-default btn-lg">Find</a>
+            <a href="/alerts" class="btn btn-primary btn-lg">Inbox</a>
             <a href="/my_friends" class="btn btn-default btn-lg">Friends</a>
             <a href="/your_profile" class="btn btn-default btn-lg">Profile</a>
         </div>

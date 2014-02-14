@@ -35,31 +35,52 @@
 
 
 <div class ="container-main">
-    <div class="row profile-content">
-        <button class="btn btn-primary btn-lg contact-button"  data-toggle="modal" data-target=".bs-modal-sm">
-            Contact Me!
+    <div class="row profile-content" style="text-align: center">
+        <!--<button class="btn btn-primary btn-lg contact-button"  data-toggle="modal" data-target=".bs-modal-sm">
+            Get in Touch
+        </button>-->
+        <button class="btn btn-primary contact-button" data-toggle="modal" data-target="#meet-up-now-modal">
+            Meet Up Now
         </button>
+        <button class="btn btn-primary contact-button">
+            Message
+        </button>
+        <a href="https://www.facebook.com" target="_blank"><button class="btn btn-primary contact-button">
+            Facebook
+        </button></a>
     </div>
 
-    <div class="modal fade bs-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div id="meet-up-now-modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-lg">Meet Up</button>
-                <button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-lg">Message</button>
-                <button class="btn btn-primary" data-toggle="modal" data-target=".bs-modal-lg">Facebook</button>
+            <div class="modal-content" style="text-align: center">
+                <img id="meet-up-arrow" src="images/arrow.png"/>
             </div>
         </div>
     </div>
 
+    <!-- Modal Contact Card -->
+    <!--<div class="modal fade bs-modal-sm contact-card" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h4>Contact Card</h4>
+                <div>
+                    <button class="btn btn-primary contact-card-btn" data-toggle="modal" data-target=".bs-modal-lg">Meet Up</button>
+                    <button class="btn btn-primary contact-card-btn" data-toggle="modal" data-target=".bs-modal-lg">Message</button>
+                    <a href="https://www.facebook.com/" target="_blank"><button class="btn btn-primary contact-card-btn">Facebook</button></a>
+                </div>
+            </div>
+        </div>
+    </div>-->
 
 
-    <div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+    <!--<div class="modal fade bs-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 LOL YOU WISH
             </div>
         </div>
-    </div>
+    </div>-->
 
     <div class="row profile-content">
         <div class="col-xs-5">
@@ -99,8 +120,8 @@
 <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <div>
         <div class="btn-group-lg btn-group-justified">
-            <a href="/find_people" class="btn btn-default btn-lg">Find Friends</a>
-            <a href="/alerts" class="btn btn-default btn-lg">Notifications</a>
+            <a href="/find_people" class="btn btn-default btn-lg">Find</a>
+            <a href="/alerts" class="btn btn-default btn-lg">Inbox</a>
             <a href="/my_friends" class="btn btn-default btn-lg">Friends</a>
             <a href="/your_profile" class="btn btn-default btn-lg">Profile</a>
         </div>
