@@ -38,6 +38,11 @@
 
 
     <div class="container-main">
+        <div class="alert alert-success" id="accepted">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <strong>Success! You broke the ice!</strong>
+            <p>+1 Social Point</p>
+        </div>
         <div class="list-container">
             {{#each alerts}}
                 <a href="/user_profile">
@@ -47,19 +52,25 @@
                         </div>
 
                         <div class="col-xs-5" id="{{name}}">
+                        <div class="col-xs-5 inbox-alert" id="{{name}}">
+
                             <div class="row name">{{name}} </div>
                             <div class="row alert">{{alert}}</div>
                         </div>
 
-                        <div class="col-xs-4 pull-right" id="response-btns">
-                            <a id="accept-btn" href="#"><button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="top" data-content="Hooray! You have a new friend! +1 Social Point.">
-                                Say Hello
+
+                        <div class="col-xs-4 pull-right" id="response-btn">
+                            <a id="accept-btn" href="#"><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#accepted">
+                                Hi!
                             </button></a>
-                            <a href="#"><button class="btn btn-danger">X</button></a>
+                            <a href="#" id="ignore-btn"><button class="btn btn-danger btn-sm">X</button></a>
+
                         </div>
 
                     </div>
+                </div>
                 </a>
+
             {{/each}}
         </div>
         <h1 style="color:white">Hello</h1>
@@ -83,5 +94,5 @@
 
 <script src="js/jquery-1.11.0.js"></script>
 <script rc="js/bootstrap.js"></script>
-<script src="js/hci-friends.js"></script>
+<script src="js/alerts.js"></script>
 </html>
