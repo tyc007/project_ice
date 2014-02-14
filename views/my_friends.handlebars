@@ -33,14 +33,14 @@
         <h4>My Friends</h4>
         <hr>
         {{#each friends}}
-            <a href="/user_profile">
+            <a href="/user_profile/{{name}}">
                 <div class="pull-left friend-row">
-                    <div class=" col-xs-3" id="pic-{{name}}">
+                    <div class="col-xs-3" id="pic-{{name}}">
                         <img src="/images/profile-square.png" class="list-image img-rounded">
                     </div>
 
-                    <div class="col-xs-9" id="{{name}}">
-                        <div class="row name">{{name}}</div>
+                    <div class="col-xs-9 name" id="{{name}}">
+                        {{name}}
                        <!-- <div class="row description">"{{description}}"</div>-->
                     </div>
 
@@ -67,5 +67,5 @@
 
 <script src="js/jquery-1.11.0.js"></script>
 <script rc="js/bootstrap.js"></script>
-<script src="js/hci-friends.js"></script>
+<script src="js/my_friends.js"></script>
 </html>
