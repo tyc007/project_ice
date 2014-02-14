@@ -13,10 +13,10 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <link href="css/hci-friends.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+    <link href="../css/hci-friends.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -50,20 +50,22 @@
 
         <div class="row profile-content">
             <div class="col-xs-5">
-                <img class=".img-responsive" id="profile-img" src="images/profile-square.png"/>
+                <img class=".img-responsive" id="profile-img" src="../images/profile-square.png"/>
             </div>
             <div class="col-xs-7">
                 <div class="name-tag">
-                    <img class=".img-responsive" src="images/nametag.png">
-                    <span><h4>John Doe</h4></span>
+                    <img class=".img-responsive" src="../images/nametag.png">
+                    <span id="name-in-name-tag"><h4>{{name}}</h4></span>
                 </div>
 
             </div>
         </div>
         <div class="container profile-content">
             <div class="row col-xs-12">
-                <h4>Computer Science Student @ UC San Diego</h4>
-                <p>Lorem ipsum dolor sit amet, in doming dictas cotidieque mei, vix dicunt viderer cotidieque te, mea sanctus facilisis constituam eu. Quo errem essent in, vim cu soluta iuvaret, eam et unum noluisse signiferumque. Pro te brute ubique definitiones. Ut impetus accumsan volutpat sed.</p>
+                <div class="profile-title"><h4>{{title}}</h4></div>
+                <div class ="profile-info">
+                <p>{{profile}}</p>
+                </div>
                 <ul>
                     <li>Lorem ipsum dolor sit amet</li>
                     <li>Lorem ipsum dolor sit amet</li>
@@ -75,9 +77,9 @@
                 <p style="font-size: 50px">1,128</p>
             </div>
             <div class="row col-xs-12 profile-content" style="text-align: center;">
-                <img class="medal" src="images/badge.png"/>
-                <img class="medal" src="images/badge.png"/>
-                <img class="medal" src="images/badge.png"/>
+                <img class="medal" src="../images/badge.png"/>
+                <img class="medal" src="../images/badge.png"/>
+                <img class="medal" src="../images/badge.png"/>
             </div>
         </div>
     </div>
@@ -96,8 +98,8 @@
 
 
 </body>
-<script src="js/jquery-1.11.0.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/user_profile.js"></script>
+<script src="../js/jquery-1.11.0.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/user_profile.js"></script>
 
 </html>

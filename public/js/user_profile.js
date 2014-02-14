@@ -5,6 +5,7 @@ $(document).ready(function() {
     initializePage();
 })
 
+// Hide the point reward alert at start
 $(".alert").hide();
 
 
@@ -23,4 +24,5 @@ $( ".contact-button" ).click(function() {
  */
 function initializePage() {
     console.log("Javascript connected!");
+
 }

@@ -59,7 +59,8 @@ app.get('/login', login.view);
 app.get('/messages', messages.view);
 app.get('/my_friends', my_friends.view);
 app.get('/signup', signup.view);
-app.get('/user_profile', user_profile.view);
+app.get('/user_profile', user_profile.userProfile);
+app.get('/user_profile/:name', user_profile.userProfile);
 app.get('/user_profile_contact', user_profile_contact.view);
 app.get('/your_profile', your_profile.view);
 
