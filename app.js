@@ -14,6 +14,7 @@ var index = require('./routes/index');
 
 var add = require('./routes/add');
 var alerts = require('./routes/alerts');
+var chatting = require('./routes/chatting');
 var find_people = require('./routes/find_people');
 var login = require('./routes/login');
 var messages = require('./routes/messages');
@@ -52,6 +53,7 @@ app.get('/', index.view);
 
 app.get('/add', add.addFriend);
 app.get('/alerts', alerts.view);
+app.get('/alerts', chatting.view);
 app.get('/find_people', find_people.view);
 app.get('/login', login.view);
 app.get('/messages', messages.view);
