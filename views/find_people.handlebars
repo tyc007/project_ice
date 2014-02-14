@@ -34,7 +34,7 @@
     <h4>Find People</h4>
     <hr>
         {{#each people}}
-            <a href="user_profile/{{name}}">
+            <a href="/user_profile/{{name}}">
                 <div class="pull-left friend-row">
                     <div class=" col-xs-3" id="pic-{{name}}">
                         <img src={{imageURL}} class="list-image img-rounded">
@@ -60,7 +60,7 @@
 <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <div>
         <div class="btn-group-lg btn-group-justified">
-            <a href="/find_people" class="btn btn-primary btn-lg">Find</a>
+            <a href="/find_people" class="btn btn-primary btn-lg navbar-btn">Find</a>
             <a href="/alerts" class="btn btn-default btn-lg">Inbox</a>
             <a href="/my_friends" class="btn btn-default btn-lg">Friends</a>
             <a href="/your_profile" class="btn btn-default btn-lg">Profile</a>

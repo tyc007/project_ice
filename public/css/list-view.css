@@ -14,19 +14,19 @@
 }
 
 .name {
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .description {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .distance {
-    font-size: 9px;
+    font-size: 12px;
 }
 
 .messages {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .alert {
@@ -36,12 +36,8 @@
 }
 
 .list-image {
-    width: 50px;
     margin-right: 10px;
-<<<<<<< HEAD
-=======
     -moz-box-shadow:     2px 2px 2px #ccc;
     -webkit-box-shadow:  2px 2px 2px #ccc;
     box-shadow:          2px 2px 2px #ccc;
->>>>>>> 3e1fd7d249bb39dc0796b8c5b88e8a9be1d0ad09
 }
