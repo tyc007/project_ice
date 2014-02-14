@@ -1,5 +1,5 @@
 // Get all of our friend data
-var data = require('../data.json');
+var data = require('../people.json');
 
 exports.view = function(req, res){
     res.render('find_people', data);

@@ -50,7 +50,7 @@
 
         <div class="row profile-content">
             <div class="col-xs-5">
-                <img class=".img-responsive" id="profile-img" src="../images/profile-square.png"/>
+                <img class=".img-responsive" id="profile-img" src="../{{imageURL}}"/>
             </div>
             <div class="col-xs-7">
                 <div class="name-tag">
@@ -66,11 +66,15 @@
                 <div class ="profile-info">
                 <p>{{profile}}</p>
                 </div>
+                <hr>
+                <h4>Interests</h4>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Lorem ipsum dolor sit amet</li>
+
+                    {{#each interest}}
+                        <li>{{ this }}</li>
+                    {{/each}}
                 </ul>
+                <hr>
             </div>
             <div class="row col-xs-12 profile-content" style="text-align: center">
                 <h4>Social Points</h4>

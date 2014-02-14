@@ -4,7 +4,7 @@
 			"name": "Mike Johnson",
 			"title": "Professor of Psychology",
 			"profile": "Professor that love to game!",
-			"interest": [ "Gaming", "Reading", "Traveling" ]
+			"interest": [ "Gaming", "Reading", "Traveling" ],
 			"imageURL": "/images/mike.jpg"	
 		},
 		{
@@ -12,49 +12,49 @@
 			"title": "Computer Science student at UCSD",
 			"profile": "Sports and food, that's all you need to know",
 			"interest": [ "Basketball", "Hiking", "Baking" ],
-			"/images/hector.jpg"
+            "imageURL": "/images/hector.jpg"
 		},
 		{
 			"name": "Jose Sanchez",
 			"title": "Professor of Literature",
 			"profile": "Love a good read over a glass of wine",
 			"interest": [ "Cooking", "Stargazing", "Yoga" ],
-			"/images/jose.jpg"
+            "imageURL": "/images/jose.jpg"
 		},
 		{
 			"name": "Tom Hamilton",
 			"title": "Biology student at UCSD",
 			"profile": "I love dogs!",	
-			"interest": [ "Canoeing", "Blogging", "Knitting" ],	
-			"/images/tom.jpg"
+			"interest": [ "Canoeing", "Blogging", "Knitting" ],
+            "imageURL": "/images/tom.jpg"
 		},
 		{
 			"name": "Ben Hope",
 			"title": "Professor of Cognitive Science",
 			"profile": "Love to catch an awesome wave!",
 			"interest": [ "Gardening", "Surfing", "Skiing" ],
-			"/images/ben.jpg"
+            "imageURL": "/images/ben.jpg"
 		},
 		{
 			"name": "Sarah Stevens",
 			"title": "English Lit. student at UCSD",
 			"profile": "Poems and a rainy day, my favorite!",
 			"interest": [ "Gaming", "Scrapbooking", "Photography" ],
-			"/images/sarah.jpg"		
+            "imageURL": "/images/sarah.jpg"
 		},
 		{
 			"name": "Pam Micaels",
 			"title": "Math major at UCSD",
 			"profile": "I love making math apps",
 			"interest": [ "Skating", "Volleybal", "Coding" ],
-			"/images/pam.jpg"
+            "imageURL": "/images/pam.jpg"
 		},
 		{
 			"name": "Oscar Howards",
 			"title": "HCI student at UCSD",
 			"profile": "I'm a friendly guy that loves to play soccer",
 			"interest": [ "Swimming", "Soccer", "Drawing" ],
-			"/images/oscar.jpg"
+            "imageURL": "/images/oscar.jpg"
 		}
 	]
 }
