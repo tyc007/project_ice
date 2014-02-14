@@ -37,22 +37,25 @@
 
 
 <div class="container-main">
-
+    <div class="list-container">
         {{#each messages}}
             <a href="/user_profile">
-            <div class="pull-left friend-row">
-                <div class=" col-xs-3" id="pic-{{name}}">
-                    <img src="/images/profile-square.png" class="list-image img-rounded">
-                </div>
+                <div class="pull-left friend-row">
+                    <div class=" col-xs-3" id="pic-{{name}}">
+                        <img src="/images/profile-square.png" class="list-image img-rounded">
+                    </div>
 
-                <div class="col-xs-9" id="{{name}}">
+                    <div class="col-xs-9" id="{{name}}">
                         <div class="row name">{{name}}</div>
                         <div class="row messages">"{{message}}"</div>
-                </div>
+                    </div>
 
-            </div>
+                </div>
             </a>
         {{/each}}
+    </div>
+    <h1 style="color:white">Hello</h1>
+    <h1 style="color:white">Hello</h1>
 </div>
 
 
@@ -60,8 +63,8 @@
 <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <div>
         <div class="btn-group-lg btn-group-justified">
-            <a href="/find_people" class="btn btn-default btn-lg">Find People</a>
-            <a href="/alerts" class="btn btn-primary btn-lg">Notifications</a>
+            <a href="/find_people" class="btn btn-default btn-lg">Find</a>
+            <a href="/alerts" class="btn btn-primary btn-lg">Inbox</a>
             <a href="/my_friends" class="btn btn-default btn-lg">Friends</a>
             <a href="/your_profile" class="btn btn-default btn-lg">Profile</a>
         </div>

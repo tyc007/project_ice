@@ -3,32 +3,38 @@
 		{
 			"name": "Doug Engelbart",
 			"description": "Literature Professor at UC San Diego",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg"
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Douglas_Engelbart_in_2008.jpg/972px-Douglas_Engelbart_in_2008.jpg",
+            "distance": "25 feet away"
 		},
 		{
 			"name": "Ivan Sutherland",
 			"description": "HCI Student at UCSD",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg"
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/5/5c/Ivan_Sutherland_at_CHM.jpg",
+            "distance": "5 feet away"
 		},
 		{
 			"name": "Lucy Suchman",
 			"description": "The Best Person Ever.",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg"
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/d/df/Lucy_Suchman.jpeg",
+            "distance": "50 feet away"
 		},
 		{
 			"name": "Vannevar Bush",
 			"description": "Poli Sci Major, UCSD c/o 2015",
-			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg"
+			"imageURL": "http://upload.wikimedia.org/wikipedia/commons/e/ea/Vannevar_Bush_portrait.jpg",
+            "distance": "13 feet away"
 		},
 		{
 			"name": "Grace Hopper",
 			"description": "Student at UC San Diego",
-			"imageURL": "http://www.personal.psu.edu/djd5202/gHop.jpg"
+			"imageURL": "http://www.personal.psu.edu/djd5202/gHop.jpg",
+            "distance": "42 feet away"
 		},
 		{
 			"name": "Allen Newell",
 			"description": "UX Ninja",
-			"imageURL": "http://www.nap.edu/html/biomems/photo/anewell.JPG"
+			"imageURL": "http://www.nap.edu/html/biomems/photo/anewell.JPG",
+            "distance": "33 feet away"
 		}
 	]
 }
