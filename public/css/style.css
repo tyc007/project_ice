@@ -1,6 +1,9 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
 /***********************************************/
 /************** GENERAL STYLES *****************/
 /***********************************************/
+
 
 body {
     color: #000000;
@@ -77,12 +80,13 @@ h1,h2,h3,h4,h5 {
 /***********************************************/
 #header-logo {
     text-align: center;
+
 }
 
-#header-logo a {
+#header-logo-text {
     color: #fff;
     font-size: 30px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Pacifico', cursive;
     letter-spacing: 2px;
 }
 
