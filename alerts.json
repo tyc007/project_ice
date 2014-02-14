@@ -1,28 +1,34 @@
 {
     "alerts": [
         {
-            "name": "Doug Engelbart",
-            "alert": ""
+            "name": "Scarlett Lawrence",
+            "alert": "",
+            "imageURL": "/images/scarlett.jpg"
         },
         {
-            "name": "Ivan Sutherland",
-            "alert": ""
+            "name": "Taylor Saldana",
+            "alert": "",
+            "imageURL": "/images/taylor.jpg"
         },
         {
-            "name": "Lucy Suchman",
-            "alert": "says hello back!"
+            "name": "Isla Swift",
+            "alert": "says hello back!",
+            "imageURL": "/images/isla.jpg"
         },
         {
-            "name": "Vannevar Bush",
-            "alert": ""
+            "name": "Christian DiCaprio",
+            "alert": "",
+            "imageURL": "/images/christian.jpg"
         },
         {
-            "name": "Grace Hopper",
-            "alert": "says hello back!"
+            "name": "Amy Johansson",
+            "alert": "says hello back!",
+            "imageURL": "/images/amy.jpg"
         },
         {
-            "name": "Allen Newell",
-            "alert": ""
+            "name": "Leonardo Bale",
+            "alert": "",
+            "imageURL": "/images/leonardo.jpg"
         }
     ]
 }

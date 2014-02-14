@@ -1,20 +1,19 @@
 {
     "messages": [
         {
-            "name": "Doug Engelbart",
-            "message": "Hey! I'm in CSE170 too! Do you have a group yet?"
+            "name": "Jennifer Adams",
+            "message": "Hey! I'm in CSE170 too!",
+            "imageURL": "/images/jennifer.jpg"
         },
         {
-            "name": "Ivan Sutherland",
-            "message": "Hi! :)"
+            "name": "Zoe Fisher",
+            "message": "Hi! :)",
+            "imageURL": "/images/zoe.jpg"
         },
         {
-            "name": "Lucy Suchman",
-            "message": "I think I see you! lol"
-        },
-        {
-            "name": "Vannevar Bush",
-            "message": "Wanna meet up?"
+            "name": "Mike Johnson",
+            "message": "I think I see you! lol",
+            "imageURL": "/images/mike.jpg"
         }
     ]
 }
