@@ -38,7 +38,10 @@
 .list-image {
     width: 50px;
     margin-right: 10px;
+<<<<<<< HEAD
+=======
     -moz-box-shadow:     2px 2px 2px #ccc;
     -webkit-box-shadow:  2px 2px 2px #ccc;
     box-shadow:          2px 2px 2px #ccc;
+>>>>>>> 3e1fd7d249bb39dc0796b8c5b88e8a9be1d0ad09
 }
