@@ -36,25 +36,25 @@
 </div>
 
 
-<div class="container-main">
-    <div class="container">
-        {{#each friends}}
+
+    <div class="container-main">
+        {{#each alerts}}
             <a href="/user_profile">
             <div class="pull-left friend-row">
-                <div class=" col-xs-2" id="pic-{{name}}">
-                    <img src="/images/profile-square.png" class="img-responsive img-rounded">
+                <div class=" col-xs-3" id="pic-{{name}}">
+                    <img src="/images/profile-square.png" class="img-rounded list-image">
                 </div>
 
                 <div class="col-xs-5" id="{{name}}">
                     <div class="row name">{{name}} </div>
-                    <!--<p class="alerts">says hello!</p>-->
+                    <div class="row alert">{{alert}}</div>
                 </div>
 
-                <div class="col-xs-5 pull-right">
+                <div class="col-xs-4 pull-right" id="response-btns">
                     <a href="#"><button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="top" data-content="Hooray! You have a new friend! +1 Social Point.">
-                        Say Hi!
+                        Say Hello
                     </button></a>
-                    <a href="#"><button class="btn btn-danger">Ignore</button></a>
+                    <a href="#"><button class="btn btn-danger">X</button></a>
                 </div>
 
             </div>
@@ -62,7 +62,7 @@
         {{/each}}
 
     </div>
-</div>
+
 
 
 <!-- Fixed bottom navbar start-->

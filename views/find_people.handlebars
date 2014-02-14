@@ -31,24 +31,23 @@
 <!-- Header End -->
 
 <div class="container-main">
-    <div class="container">
-        <h1>Find People</h1>
+        <h4>Find People</h4>
         <hr>
         {{#each friends}}
+            <a href="/user_profile">
             <div class="pull-left friend-row">
-                <div class=" col-xs-2" id="pic-{{name}}">
-                    <img src={{imageURL}} class="img-responsive img-rounded">
+                <div class=" col-xs-3" id="pic-{{name}}">
+                    <img src={{imageURL}} class="list-image img-rounded">
                 </div>
-                <div class="col-xs-10" id="{{name}}">
-                    <a href="/user_profile">
+                <div class="col-xs-9" id="{{name}}">
+
                         <div class="row name">{{name}}</div>
                         <div class="row description">"{{description}}"</div>
-                    </a>
+
                 </div>
             </div>
+            </a>
         {{/each}}
-
-    </div>
 </div>
 
 

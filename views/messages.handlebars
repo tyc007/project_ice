@@ -37,26 +37,22 @@
 
 
 <div class="container-main">
-    <div class="container">
+
         {{#each messages}}
             <a href="/user_profile">
             <div class="pull-left friend-row">
-                <div class=" col-xs-2" id="pic-{{name}}">
-                    <img src="/images/profile-square.png" class="img-responsive img-rounded">
+                <div class=" col-xs-3" id="pic-{{name}}">
+                    <img src="/images/profile-square.png" class="list-image img-rounded">
                 </div>
 
-                <div class="col-xs-10" id="{{name}}">
-
+                <div class="col-xs-9" id="{{name}}">
                         <div class="row name">{{name}}</div>
                         <div class="row messages">"{{message}}"</div>
-
                 </div>
 
             </div>
             </a>
         {{/each}}
-
-    </div>
 </div>
 
 

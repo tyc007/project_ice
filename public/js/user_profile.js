@@ -12,7 +12,7 @@ $(".alert").hide();
 $( ".contact-button" ).click(function() {
     console.log(this);
     $(this).prop('disabled', true);
-    $(this).text("Pending Request");
+    $(this).text("Greeting Pending");
     $("#request-sent").show("slow");
 });
 
