@@ -13,11 +13,11 @@ $("#accepted").hide();
 
 // Hide alert if ignored button is clicked
 $("#ignore-btn").click(function(){
-    $(this).parent().parent().hide('medium');
+    $(this).parent().parent().parent().hide('medium');
 });
 
 $("#accept-btn").click(function(){
-    $(this).parent().parent().hide('medium');
+    $(this).parent().parent().parent().hide('medium');
     $("#accepted").show("slow");
 })
 
