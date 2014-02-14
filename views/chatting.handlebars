@@ -1,0 +1,84 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Messages</title>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/list-view.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- Header Start -->
+<div class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin:0">
+    <div class="row">
+        <div class="col-xs-4 pull-left" >
+            <a href="/messages">Back</a>
+        </div>
+        <div class="col-xs-4" id="header-logo">
+            <a id="header-logo-text">hello</a>
+        </div>
+    </div>
+</div>
+<!-- Header End -->
+
+
+
+
+<div class="container-main">
+    <div class="list-container">
+        {{#each alerts}}
+            <a href="/user_profile">
+                <div class="pull-left friend-row">
+                    <div class=" col-xs-3" id="pic-{{name}}">
+                        <img src="/images/profile-square.png" class="img-rounded list-image">
+                    </div>
+
+                    <div class="col-xs-5" id="{{name}}">
+                        <div class="row name">{{name}} </div>
+                        <div class="row alert">{{alert}}</div>
+                    </div>
+
+                    <div class="col-xs-4 pull-right" id="response-btns">
+                        <a id="accept-btn" href="#"><button type="button" class="btn btn-success" data-container="body" data-toggle="popover" data-placement="top" data-content="Hooray! You have a new friend! +1 Social Point.">
+                            Say Hello
+                        </button></a>
+                        <a href="#"><button class="btn btn-danger">X</button></a>
+                    </div>
+
+                </div>
+            </a>
+        {{/each}}
+    </div>
+    <h1 style="color:white">Hello</h1>
+</div>
+
+
+
+<!-- Fixed bottom navbar start-->
+<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div>
+        <div class="btn-group-lg btn-group-justified">
+            <a href="/find_people" class="btn btn-default btn-lg">Find</a>
+            <a href="/alerts" class="btn btn-primary btn-lg">Inbox</a>
+            <a href="/my_friends" class="btn btn-default btn-lg">Friends</a>
+            <a href="/your_profile" class="btn btn-default btn-lg">Profile</a>
+        </div>
+    </div>
+</div>
+<!-- Fixed bottom navbar end-->
+</body>
+
+<script src="js/jquery-1.11.0.js"></script>
+<script rc="js/bootstrap.js"></script>
+<script src="js/hci-friends.js"></script>
+</html>

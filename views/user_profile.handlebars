@@ -1,0 +1,109 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>Hello</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-theme.css" rel="stylesheet">
+    <link href="../css/hci-friends.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="row">
+        <div class="col-xs-4 pull-left" >
+            <a class="pull-left" href="/find_people">Back</a>
+        </div>
+        <div class="col-xs-4" id="header-logo">
+            <a id="header-logo-text">hello</a>
+        </div>
+    </div>
+</div>
+
+
+    <div class ="container-main">
+        <div class="alert alert-success" id="request-sent">
+            <a href="#" class="close" data-dismiss="alert">&times;</a>
+            <strong>Success! You broke the ice!</strong>
+            <p>+1 Social Point</p>
+        </div>
+
+
+        <div class="row profile-content" style="text-align: center">
+            <button class="btn btn-primary btn-md contact-button" data-toggle="modal" data-target="#request-sent">
+                Break the Ice!
+            </button>
+        </div>
+
+        <div class="row profile-content">
+            <div class="col-xs-5">
+                <img class=".img-responsive" id="profile-img" src="../{{imageURL}}"/>
+            </div>
+            <div class="col-xs-7">
+                <div class="name-tag">
+                    <img class=".img-responsive" src="../images/nametag.png">
+                    <span id="name-in-name-tag"><h4>{{name}}</h4></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="container profile-content">
+            <div class="row col-xs-12">
+                <div class="profile-title"><h4>{{title}}</h4></div>
+                <div class ="profile-info">
+                <p>{{profile}}</p>
+                </div>
+                <hr>
+                <h4>Interests</h4>
+                <ul>
+
+                    {{#each interest}}
+                        <li>{{ this }}</li>
+                    {{/each}}
+                </ul>
+                <hr>
+            </div>
+            <div class="row col-xs-12 profile-content" style="text-align: center">
+                <h4>Social Points</h4>
+                <p style="font-size: 50px">1,128</p>
+            </div>
+            <div class="row col-xs-12 profile-content" style="text-align: center;">
+                <img class="medal" src="../images/badge.png"/>
+                <img class="medal" src="../images/badge.png"/>
+                <img class="medal" src="../images/badge.png"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fixed bottom navbar -->
+    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+        <div>
+            <div class="btn-group-lg btn-group-justified">
+                <a href="/find_people" class="btn btn-primary btn-lg">Find</a>
+                <a href="/alerts" class="btn btn-default btn-lg">Inbox</a>
+                <a href="/my_friends" class="btn btn-default btn-lg">Friends</a>
+                <a href="/your_profile" class="btn btn-default btn-lg">Profile</a>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="../js/jquery-1.11.0.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/user_profile.js"></script>
+
+</html>

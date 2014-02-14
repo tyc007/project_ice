@@ -1,0 +1,28 @@
+{
+    "alerts": [
+        {
+            "name": "Doug Engelbart",
+            "alert": ""
+        },
+        {
+            "name": "Ivan Sutherland",
+            "alert": ""
+        },
+        {
+            "name": "Lucy Suchman",
+            "alert": "says hello back!"
+        },
+        {
+            "name": "Vannevar Bush",
+            "alert": ""
+        },
+        {
+            "name": "Grace Hopper",
+            "alert": "says hello back!"
+        },
+        {
+            "name": "Allen Newell",
+            "alert": ""
+        }
+    ]
+}
