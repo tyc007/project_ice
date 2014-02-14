@@ -10,10 +10,10 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.css" rel="stylesheet">
-    <link href="css/list-view.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../public/css/bootstrap.css" rel="stylesheet">
+    <link href="../public/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="../public/css/list-view.css" rel="stylesheet">
+    <link href="../public/css/style.css" rel="stylesheet">
     <!-- <link href="css/style.css" rel="stylesheet"> -->
 </head>
 
@@ -34,7 +34,7 @@
     <h4>Find People</h4>
     <hr>
         {{#each people}}
-            <a href="/user_profile/{{name}}">
+            <a href="../views/user_profile.handlebars/{{name}}">
                 <div class="pull-left friend-row">
                     <div class=" col-xs-3" id="pic-{{name}}">
                         <img src={{imageURL}} class="list-image img-rounded">
