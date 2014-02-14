@@ -16,5 +16,5 @@ exports.userProfile = function(req, res){
         }
     }
     console.log(profile);
-    res.render('user_profile', profile);
+    res.render('user_profile_contact', profile);
 };
