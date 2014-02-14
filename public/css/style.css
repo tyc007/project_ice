@@ -80,13 +80,13 @@ h1,h2,h3,h4,h5 {
 /***********************************************/
 #header-logo {
     text-align: center;
-    font-family: 'Pacifico', cursive;
+
 }
 
-#header-logo a {
+#header-logo-text {
     color: #fff;
     font-size: 30px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Pacifico', cursive;
     letter-spacing: 2px;
 }
 
