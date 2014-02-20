@@ -46,7 +46,7 @@
         <div class="list-container">
             {{#each alerts}}
                 <a href="/user_profile">
-                    <div class="pull-left friend-row">
+                    <div class="pull-left friend-row" id="friend-alert" row-id="{{name}}">
                         <div class=" col-xs-3" id="pic-{{name}}">
                             <img src="{{imageURL}}" class="img-rounded list-image">
                         </div>
@@ -60,10 +60,10 @@
 
 
                         <div class="col-xs-3 pull-right" id="response-btn">
-                            <a id="accept-btn"  class="pull-right" href="#"><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#accepted">
+                            <a id="accept-btn"  class="pull-right" href="#" data-id="{{name}}"><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#accepted">
                                 Hi!
                             </button></a>
-                            <a href="#" id="ignore-btn" class="pull-right"><button class="btn btn-danger btn-sm">X</button></a>
+                            <a href="#" id="ignore-btn" class="pull-right" data-id="{{name}}"><button class="btn btn-danger btn-sm">X</button></a>
 
                         </div>
 

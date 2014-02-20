@@ -6,19 +6,29 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
     initializePage();
+    i
 })
 
 // Hide social point notification
-$("#accepted").hide();
+$('#accepted').hide();
 
-// Hide alert if ignored button is clicked
-$("#ignore-btn").click(function(){
-    $(this).parent().parent().parent().hide('medium');
-});
 
-$("#accept-btn").click(function(){
+$('#ignore-btn').bind('click', function(e){
     $(this).parent().parent().parent().hide('medium');
-    $("#accepted").show("slow");
+})
+
+function deleteAlert(obj){
+
+}
+
+
+
+
+$('#accept-btn').click(function(){
+    /*console.log($(this).attr('data-id'));
+    console.log($('#friend-alert').attr('row-id'));
+    $('#friend-alert').hide('medium');
+    $("#accepted").show("slow");*/
 })
 
 /*

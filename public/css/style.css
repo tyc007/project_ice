@@ -39,9 +39,10 @@ h1,h2,h3,h4,h5 {
 
     /************** MODAL STYLES *******************/
     .modal-content {
-        width: 50%;
-        padding: 2em;
-        margin: 30% auto;
+        width: 70%;
+        padding: 1em;
+        margin: 20% auto;
+        text-align: center;
     }
 
     /************** NAME TAG STYLES ****************/
@@ -155,7 +156,8 @@ h1,h2,h3,h4,h5 {
 
 #meet-up-arrow {
     /*-webkit-transform-origin:0% 60%;*/
-    -webkit-animation:arm 4s alternate infinite ;
+    /*-webkit-animation:arm 4s alternate infinite ;*/
+    /*-webkit-animation:arm 4s alternate infinite ;*/
 
     margin: 0 auto;
 }
