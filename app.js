@@ -3,6 +3,7 @@
  * Module dependencies.
  */
 
+
 var express = require('express');
 var http = require('http');
 var path = require('path');
@@ -63,6 +64,7 @@ app.get('/user_profile', user_profile.userProfile);
 app.get('/user_profile/:name', user_profile.userProfile);
 app.get('/user_profile_contact/:name', user_profile_contact.userProfile);
 app.get('/your_profile', your_profile.view);
+app.post('/delete_user/:id', alerts.delete);
 
 
 http.createServer(app).listen(app.get('port'), function(){

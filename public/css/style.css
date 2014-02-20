@@ -21,6 +21,8 @@ h1,h2,h3,h4,h5 {
 
 }
 
+
+
     /************** BUTTON STYLES ******************/
     .btn-lg {
         height: 60px;
@@ -160,4 +162,8 @@ h1,h2,h3,h4,h5 {
     /*-webkit-animation:arm 4s alternate infinite ;*/
 
     margin: 0 auto;
+}
+
+#map-canvas {
+    height: 100%;
 }

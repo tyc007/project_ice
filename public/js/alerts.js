@@ -6,15 +6,19 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
     initializePage();
-    i
 })
 
 // Hide social point notification
 $('#accepted').hide();
 
 
-$('#ignore-btn').bind('click', function(e){
+$('.ignore_btn').bind('click', function(e){
+
     $(this).parent().parent().parent().hide('medium');
+    var idNumber = $(this).data('id');
+    $.post('/delete_user/'+ idNumber, function() {
+        return true;
+    });
 })
 
 function deleteAlert(obj){

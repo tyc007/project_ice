@@ -9,6 +9,8 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.cookie.js"></script>
     <![endif]-->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-theme.css" rel="stylesheet">
@@ -45,7 +47,7 @@
         </div>
         <div class="list-container">
             {{#each alerts}}
-                <a href="/user_profile">
+                <a href="/user_profile/{{name}}">
                     <div class="pull-left friend-row" id="friend-alert" row-id="{{name}}">
                         <div class=" col-xs-3" id="pic-{{name}}">
                             <img src="{{imageURL}}" class="img-rounded list-image">
@@ -57,13 +59,11 @@
                             <div class="row name">{{name}} </div>
                             <div class="row alert">{{alert}}</div>
                         </div>
-
-
                         <div class="col-xs-3 pull-right" id="response-btn">
                             <a id="accept-btn"  class="pull-right" href="#" data-id="{{name}}"><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#accepted">
                                 Hi!
                             </button></a>
-                            <a href="#" id="ignore-btn" class="pull-right" data-id="{{name}}"><button class="btn btn-danger btn-sm">X</button></a>
+                            <a href="#" id="ignore-btn" class="pull-right ignore_btn" data-id="{{name}}"><button class="btn btn-danger btn-sm">X</button></a>
 
                         </div>
 

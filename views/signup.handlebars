@@ -7,6 +7,7 @@
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link href="css/hci-friends.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
     <script>
         if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
     </script>
@@ -27,37 +28,42 @@
 
 <div class="container">
             <center>
-                <form class="form-horizontal">
+                <form class="form-horizontal" id="signupform" action="/your_profile">
                     <fieldset>
                         <div class="form-group">
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" id="Name" placeholder="First Name, Last Name">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="First Name, Last Name">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" id="inputEmail" placeholder="Email">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-lg-10">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-lg-10">
-                                <input type="text" class="form-control" id="title" placeholder="Title (ex: student, ninja, best person ever, etc..)">
+                                <input type="text" class="form-control" id="title" name="title" placeholder="Title (ex: student, ninja, best person ever, etc..)">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-lg-10">
-                                <textarea class="form-control" rows="3" id="textArea" placeholder="Write a short bio about yourself."></textarea>
+                                <textarea class="form-control" rows="3" id="bio" name="bio" placeholder="Write a short bio about yourself."></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-10">
+                                <textarea class="form-control" rows="3" id="interests" name="interests" placeholder="Please list a few interests so we can get to know you!"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-lg-10 col-lg-offset-2">
                                 <!--<button type="submit" class="btn btn-primary">Submit</button>-->
-                                <a href="#" class="btn btn-primary">Sign Up</a>
+                                <input type="submit" name="submit" class="btn btn-primary" value="Sign Up!">
                                 <a href="/login" class="btn btn-default">Cancel</a>
                             </div>
                         </div>
@@ -66,8 +72,12 @@
             </center>
 </div>
 
-
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/webflow.js"></script>
+<!--<script src="js/jquery.js"></script>-->
+<script src="js/jquery-1.11.0.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/hci-friends.js"></script>
+<script src="js/signup.js"></script>
 </body>
 </html>

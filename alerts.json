@@ -1,34 +1,24 @@
 {
     "alerts": [
         {
-            "name": "Scarlett Lawrence",
+            "name": "Oscar Howards",
             "alert": "",
-            "imageURL": "/images/scarlett.jpg"
+            "imageURL": "/images/oscar.jpg"
         },
         {
-            "name": "Taylor Saldana",
+            "name": "Pam Micaels",
             "alert": "",
-            "imageURL": "/images/taylor.jpg"
+            "imageURL": "/images/pam.jpg"
         },
         {
-            "name": "Isla Swift",
+            "name": "Sarah Stevens",
             "alert": "says hello back!",
-            "imageURL": "/images/isla.jpg"
+            "imageURL": "/images/sarah.jpg"
         },
         {
-            "name": "Christian DiCaprio",
+            "name": "Ben Hope",
             "alert": "",
-            "imageURL": "/images/christian.jpg"
-        },
-        {
-            "name": "Amy Johansson",
-            "alert": "says hello back!",
-            "imageURL": "/images/amy.jpg"
-        },
-        {
-            "name": "Leonardo Bale",
-            "alert": "",
-            "imageURL": "/images/leonardo.jpg"
+            "imageURL": "/images/ben.jpg"
         }
     ]
 }
