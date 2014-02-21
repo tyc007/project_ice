@@ -32,11 +32,12 @@
 </div>
 <!-- Header End -->
 
-<div class="btn-group btn-group-justified">
-    <a href="/alerts" class="btn btn-primary alerts-tab">Alerts</a>
-    <a href="/messages" class="btn btn-default alerts-tab">Messages</a>
+<div class="row col-xs-12">
+    <div class="btn-group btn-group-justified">
+        <a href="/alerts" class="btn btn-primary alerts-tab">Alerts</a>
+        <a href="/messages" class="btn btn-default alerts-tab">Messages</a>
+    </div>
 </div>
-
 
 
     <div class="container-main">
@@ -45,40 +46,42 @@
             <strong>Success! You broke the ice!</strong>
             <p>+1 Social Point</p>
         </div>
-        <div class="list-container">
-            {{#each alerts}}
-                <a href="/user_profile/{{name}}">
-                    <div class="pull-left friend-row" id="friend-alert" row-id="{{name}}">
-                        <div class=" col-xs-3" id="pic-{{name}}">
-                            <img src="{{imageURL}}" class="img-rounded list-image">
+        <div class="row">
+            <div class="col-xs-12">
+                {{#each alerts}}
+                    <a href="/user_profile/{{name}}">
+                        <div class="pull-left friend-row" id="friend-alert" row-id="{{name}}">
+                            <div class=" col-xs-3" id="pic-{{name}}">
+                                <img src="{{imageURL}}" class="img-rounded list-image">
+                            </div>
+
+                            <div class="col-xs-6" id="{{name}}">
+                                <div class="col-xs-5 inbox-alert" id="{{name}}">
+
+                                    <div class="row name">{{name}} </div>
+                                    <div class="row alert">{{alert}}</div>
+                                </div>
+                                <div class="col-xs-3 pull-right" id="response-btn">
+                                    <a id="accept-btn"  class="pull-right" href="#" data-id="{{name}}"><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#accepted">
+                                        Hi!
+                                    </button></a>
+                                    <a href="#" id="ignore-btn" class="pull-right ignore_btn" data-id="{{name}}"><button class="btn btn-danger btn-sm">X</button></a>
+
+                                </div>
+
+                            </div>
                         </div>
+                    </a>
 
-                        <div class="col-xs-6" id="{{name}}">
-                        <div class="col-xs-5 inbox-alert" id="{{name}}">
-
-                            <div class="row name">{{name}} </div>
-                            <div class="row alert">{{alert}}</div>
-                        </div>
-                        <div class="col-xs-3 pull-right" id="response-btn">
-                            <a id="accept-btn"  class="pull-right" href="#" data-id="{{name}}"><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#accepted">
-                                Hi!
-                            </button></a>
-                            <a href="#" id="ignore-btn" class="pull-right ignore_btn" data-id="{{name}}"><button class="btn btn-danger btn-sm">X</button></a>
-
-                        </div>
-
-                    </div>
-                </div>
-                </a>
-
-            {{/each}}
+                {{/each}}
+            </div>
         </div>
         <h1 style="color:white">Hello</h1>
     </div>
 
 
 
-<!-- Fixed bottom navbar start-->
+<!-- Fixed bottom navbar -->
 <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <div>
         <div class="btn-group-lg btn-group-justified">
@@ -89,7 +92,6 @@
         </div>
     </div>
 </div>
-<!-- Fixed bottom navbar end-->
 </body>
 
 <script src="js/jquery-1.11.0.js"></script>

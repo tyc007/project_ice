@@ -32,44 +32,48 @@
 </div>
 <!-- Header End -->
 <div class="container-main">
-        <h4>My Friends</h4>
+        <div class="row">
+            <h4>My Friends</h4>
+        </div>
+
         <hr>
 
-        <div class="list-container">
-            {{#each friends}}
-                <a href="/user_profile_contact/{{name}}">
-                    <div class="pull-left friend-row">
-                        <div class=" col-xs-3" id="pic-{{name}}">
-                            <img src={{imageURL}} class="list-image img-rounded">
+        <div class="row">
+            <div class="col-xs-12">
+                {{#each friends}}
+                    <a href="/user_profile_contact/{{name}}">
+                        <div class="pull-left friend-row">
+                            <div class=" col-xs-3" id="pic-{{name}}">
+                                <img src={{imageURL}} class="list-image img-rounded">
+                            </div>
+
+
+                            <div class="col-xs-9" id="{{name}}">
+                                <div class="row name">{{name}}</div>
+                                <!-- <div class="row description">"{{description}}"</div>-->
+                            </div>
+
                         </div>
-
-
-                        <div class="col-xs-9" id="{{name}}">
-                            <div class="row name">{{name}}</div>
-                            <!-- <div class="row description">"{{description}}"</div>-->
-                        </div>
-
-                    </div>
-                </a>
-            {{/each}}
+                    </a>
+                {{/each}}
+            </div>
         </div>
 
     <h1 style="color:white">Hello</h1>
     </div>
 
 
-<!-- Fixed bottom navbar start-->
+<!-- Fixed bottom navbar -->
 <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <div>
         <div class="btn-group-lg btn-group-justified">
-            <a href="/find_people" class="nav-btn btn btn-default btn-lg">Find</a>
+            <a href="/find_people" class="btn btn-default btn-lg">Find</a>
             <a href="/alerts" class="btn btn-default btn-lg">Inbox</a>
             <a href="/my_friends" class="btn btn-primary btn-lg">Friends</a>
             <a href="/your_profile" class="btn btn-default btn-lg">Profile</a>
         </div>
     </div>
 </div>
-<!-- Fixed bottom navbar end-->
 </body>
 
 <script src="js/jquery-1.11.0.js"></script>

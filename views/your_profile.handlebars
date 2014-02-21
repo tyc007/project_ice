@@ -21,6 +21,22 @@
     <link href="css/bootstrap-theme.css" rel="stylesheet">
     <link href="css/hci-friends.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript">
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#profile-image')
+                            .attr('src', e.target.result)
+                            .css({'width':'100%'});
+
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -44,7 +60,8 @@
     <div class ="container-main">
         <div class="row profile-content">
             <div class="col-xs-5">
-                <img class=".img-responsive" id="profile-img" src="images/defaultprofile.png"/>
+                <img id="profile-image" src="images/defaultprofile.png" alt="your image" src="images/defaultprofile.png"/>
+                <input type='file' onchange="readURL(this);" />
             </div>
             <div class="col-xs-7">
                 <div class="name-tag">

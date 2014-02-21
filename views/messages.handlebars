@@ -39,29 +39,31 @@
 
 
 <div class="container-main">
-    <div class="list-container">
-        {{#each messages}}
-            <a href="/chatting">
-                <div class="pull-left friend-row">
-                    <div class=" col-xs-3" id="pic-{{name}}">
-                        <img src="{{imageURL}}" class="list-image img-rounded">
-                    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            {{#each messages}}
+                <a href="/chatting">
+                    <div class="pull-left friend-row">
+                        <div class=" col-xs-3" id="pic-{{name}}">
+                            <img src="{{imageURL}}" class="list-image img-rounded">
+                        </div>
 
-                    <div class="col-xs-9" id="{{name}}">
-                        <div class="row name">{{name}}</div>
-                        <div class="row messages">"{{message}}"</div>
-                    </div>
+                        <div class="col-xs-9" id="{{name}}">
+                            <div class="row name">{{name}}</div>
+                            <div class="row messages">"{{message}}"</div>
+                        </div>
 
-                </div>
-            </a>
-        {{/each}}
+                    </div>
+                </a>
+            {{/each}}
+        </div>
     </div>
     <h1 style="color:white">Hello</h1>
     <h1 style="color:white">Hello</h1>
 </div>
 
 
-<!-- Fixed bottom navbar start-->
+<!-- Fixed bottom navbar -->
 <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
     <div>
         <div class="btn-group-lg btn-group-justified">
@@ -72,7 +74,6 @@
         </div>
     </div>
 </div>
-<!-- Fixed bottom navbar end-->
 </body>
 
 <script src="js/jquery-1.11.0.js"></script>
