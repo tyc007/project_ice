@@ -54,6 +54,7 @@ app.get('/', index.view);
 
 app.get('/add', add.addFriend);
 app.get('/alerts', alerts.view);
+app.get('/alerts_old', alerts.viewOld);
 app.get('/chatting', chatting.view);
 app.get('/find_people', find_people.view);
 app.get('/login', login.view);

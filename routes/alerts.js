@@ -10,6 +10,11 @@ exports.view = function(req, res){
     res.render('alerts', data);
 };
 
+exports.viewOld = function(req, res){
+    console.log(data);
+    res.render('alerts_old', data);
+};
+
 exports.delete = function(req, res){
   /*var name =  req.params.id
   for(var i = 0; i < data.alerts.length; i++){
