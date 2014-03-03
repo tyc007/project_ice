@@ -29,6 +29,12 @@ $(document).ready(function() {
         $('.progress-bar').width(points + '%').text(points);
 
     })
+
+    $('#inbox-popover').click(function(){
+        console.log('pop');
+        $('#inbox-popover').popover('toggle');
+    })
+
 })
 
 
