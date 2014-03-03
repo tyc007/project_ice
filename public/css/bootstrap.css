@@ -4141,19 +4141,28 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dddddd;
+  /*border-top: 1px solid #dddddd;*/
+  background-color: #33373B;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .nav-tabs > li {
   float: left;
   margin-bottom: -1px;
+
 }
 
 .nav-tabs > li > a {
-  margin-right: 2px;
+  /*margin-right: 2px;*/
   line-height: 1.428571429;
-  border: 1px solid transparent;
-  border-radius: 4px 4px 0 0;
+  /*border: 1px solid transparent;*/
+  /*border-radius: 4px 4px 0 0;*/
+  color: #ffffff;
+  color: #7d858e;
+  text-align: center;
+
 }
 
 .nav-tabs > li > a:hover {
@@ -4163,11 +4172,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #555555;
+  color: #ffffff;
   cursor: default;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
+  background-color: #cc0000;
+  /*border: 1px solid #dddddd;*/
   border-bottom-color: transparent;
+  border-top-color: transparent;
 }
 
 .nav-tabs.nav-justified {
@@ -4207,7 +4217,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-tabs.nav-justified > .active > a,
 .nav-tabs.nav-justified > .active > a:hover,
 .nav-tabs.nav-justified > .active > a:focus {
-  border: 1px solid #dddddd;
+  /*border: 1px solid #dddddd;*/
 }
 
 @media (min-width: 768px) {

@@ -1,7 +1,9 @@
 // Get all of our friend data
-var data = require('../data.json');
+var people = require('../people.json');
+var friends = require('../friends.json');
 
 exports.view = function(req, res){
-	console.log(data);
-	res.render('index', data);
+	console.log(people);
+	res.render('index', people);
+
 };
