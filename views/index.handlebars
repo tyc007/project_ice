@@ -72,6 +72,9 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
         <li><a href="#profile" data-toggle="tab"><span class="fa fa-user"></span>Profile</a></li>
     </ul>
 </div>
+<div class="view-profile">
+
+</div>
 
 
 <div class="tab-content">
@@ -79,7 +82,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
     <div class="tab-pane active" id="find_people">
         <div class="container-main">
             {{#each people}}
-            <a href="/user_profile/{{name}}">
+            <a href="/user_profile/{{name}}" class="friend_profile">
                 <div class="row container">
                     <div class="col-xs-4">
                         <img src={{imageURL}} class="img-responsive img-rounded">
@@ -109,7 +112,7 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
     <div class="tab-pane" id="friends">
         <div class="container-main">
             {{#each friends}}
-                <a href="/user_profile/{{name}}">
+                <a href="/user_profile_contact/{{name}}" class="friend_profile">
                     <div class="row container">
                         <div class="col-xs-4">
                             <img src={{imageURL}} class="img-responsive img-rounded" >
@@ -175,6 +178,6 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
 </body>
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
-	<script src="js/hci-friends.js"></script>
+
     <script src="js/index.js"></script>
 </html>
