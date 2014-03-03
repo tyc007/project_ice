@@ -34,6 +34,8 @@ $(document).ready(function() {
 
     $('.stranger_profile').click( loadProfile);
 
+    $('.friend_profile').click( loadProfile);
+
     $('.nav-tabs').click( showTab);
 
 })
