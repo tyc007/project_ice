@@ -14,7 +14,8 @@ $(document).ready(function() {
         //var val = Math.floor((Math.random() * 100)) + '%';
 
         points = points + 10;
-        $('.progress-bar').width(points + '%').text(points);
+        // $('.progress-bar').width(points + '%').text(points);
+        $('.progress-bar').width(points + '%');
         if(points == 100)
         {
             $('.badge-notification').modal('show');
@@ -31,14 +32,34 @@ $(document).ready(function() {
 
     })
 
-    $('#inbox-popover').click(function(){
+    /*$('#inbox-popover').click(function(){
         console.log('pop');
         $('#inbox-popover').popover('toggle');
-    })
+    })*/
+
+    $('.some-popover-link').popover({
+        container: 'body',
+        html: true,
+        placement: 'bottom'
+    });
+
+    $(document).click(function (e) {
+        $('.some-popover-link').each(function () {
+            if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
+                //$(this).popover('hide');
+                if ($(this).data('bs.popover').tip().hasClass('in')) {
+                    $(this).popover('toggle');
+                }
+
+                return;
+            }
+        });
+    });
 
     $('.friend_profile').click( loadProfile);
 
     $('.nav-tabs').click( showTab);
+
 
 })
 
@@ -62,3 +83,4 @@ function showTab(e) {
 function initializePage() {
 
 }
+

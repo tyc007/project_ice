@@ -15,11 +15,15 @@
       <script src="js/jquery.js"></script>
       <script src="js/jquery.cookie.js"></script>
       <script src="js/jquery-1.10.2.js"></script>
+      <script type="text/javascript" src="js/jquery.mmenu.js"></script>
+
     <![endif]-->  
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.css" rel="stylesheet">
     <link href="css/jquery-ui-1.10.4.custom.css">
     <link href="css/font-awesome.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript">
         function readURL(input) {
@@ -37,143 +41,150 @@
             }
         }
     </script>
+
+
+
 </head>
 
 <body>
 
-<!-- HEADER -->
-<div class="navbar navbar-inverse navbar-static-top" role="navigation">
-    <div class="row">
-        <div class="col-xs-4 pull-left" >
-        </div>
-        <div class="col-xs-4" id="header-logo">
-            <a id="header-logo-text">hello</a>
-        </div>
-        <div class="col-xs-4 pull-right">
-            <button type="button" class="btn btn-default" id="inbox-popover" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
-sagittis lacus vel augue laoreet rutrum faucibus.">
-                Messages
-            </button>
-        </div>
-    </div>
-</div>
 
-<div class="progress active" style="width:100%; margin-top: -20px; padding-top: 0">
-    <div class="progress-bar" width="40%"></div>
-</div>
-<button class="points" type="button" class="btn btn-success" style="width:150px;">Click for points</button>
+    <!-- HEADER -->
+    <div class="navbar navbar-static-top" id="header" role="navigation">
+        <div class="row">
+            <div class="col-xs-4 pull-left" >
 
-<!-- BOTTOM NAVIGATION -->
-<div id="navigation" class="navbar-fixed-bottom">
-    <ul class="nav nav-tabs">
-        <li><a href="#find_people" data-toggle="tab">Find</a></li>
-        <li><a href="#inbox" data-toggle="tab">Inbox</a></li>
-        <li><a href="#friends" data-toggle="tab">Friends</a></li>
-        <li><a href="#profile" data-toggle="tab"><span class="fa fa-user"></span>Profile</a></li>
-    </ul>
-</div>
-<div class="view-profile">
-
-</div>
-
-
-<div class="tab-content">
-    <!-- FIND PEOPLE PAGE -->
-    <div class="tab-pane active" id="find_people">
-        <div class="container-main">
-            {{#each people}}
-            <a href="/user_profile/{{name}}" class="friend_profile">
-                <div class="row container">
-                    <div class="col-xs-4">
-                        <img src={{imageURL}} class="img-responsive img-rounded">
-                    </div>
-                    <div class="col-xs-8">
-                        <h4>{{name}}</h4>
-                        <p>{{title}}</p>
-                    </div>
-                </div>
-            </a>
-                <hr>
-            {{/each}}
-        </div>
-    </div><!-- end find people page -->
-
-
-    <!-- USER PROFILE PAGE -->
-
-
-
-    <!-- INBOX PAGE -->
-    <div class="tab-pane" id="inbox">
-
-    </div><!-- end inbox page -->
-
-    <!-- FRIENDS PAGE -->
-    <div class="tab-pane" id="friends">
-        <div class="container-main">
-            {{#each friends}}
-                <a href="/user_profile_contact/{{name}}" class="friend_profile">
-                    <div class="row container">
-                        <div class="col-xs-4">
-                            <img src={{imageURL}} class="img-responsive img-rounded" >
-                        </div>
-                        <div class="col-xs-8">
-                            <h4>{{name}}</h4>
-                            <p>{{title}}</p>
-                        </div>
-                    </div>
+            </div>
+            <div class="col-xs-4" id="header-logo">
+                <h1 id="header-logo-text">hello</h1>
+            </div>
+            <div class="col-xs-4 pull-right">
+                <a href="#" data-toggle="popover" data-original-title="" data-content="Messages" class="some-popover-link pull-right" id="message-popover" style="right: 150px">
+                    <span class="fa fa-comment-o" style="font-size: 30px;"></span>
                 </a>
-                <hr>
-            {{/each}}
-        </div>
-    </div><!-- end friends page -->
-
-    <!-- PROFILE PAGE -->
-    <div class="tab-pane" id="profile">
-        <div class ="container-main">
-            <div class="row profile-content">
-                <div class="col-xs-5">
-                    <img id="profile-image" src="images/defaultprofile.png" alt="your image" src="images/defaultprofile.png"/>
-                    <input type='file' onchange="readURL(this);" />
-                </div>
-                <div class="col-xs-7">
-                    <div class="name-tag">
-                        <img class=".img-responsive" src="images/nametag.png">
-                        <h4><span id="my-name"></span></h4>
-                    </div>
-                </div>
-            </div>
-            <div class="container profile-content">
-                <div class="row col-xs-12">
-                    <h4><span id="my-title"></span></h4>
-                    <p><span id="my-bio"></span></p>
-                    </br>
-                    <h5>Interests:</h5>
-                    <span id="my-interests"></span>
-
-                </div>
-                <div class="row col-xs-12 profile-content" style="text-align: center">
-                   <!-- <h4>Social Points</h4>
-                    <p style="font-size: 50px">328</p>-->
-                </div>
-                <div class="row col-xs-12 profile-content" style="text-align: center;">
-                    <img class="medal" src="images/badge.png"/>
-                </div>
-            </div>
-        </div>
-    </div><!-- end profile page-->
-
-
-    <!-- BADGE MODAL -->
-    <div class="modal fade bs-example-modal-sm badge-notification" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                Congrats! You earned a badge!</br>
-                <img src="images/badge.png" style="width: 20%; margin: 10px"/>
             </div>
         </div>
     </div>
-</div>
+
+    <div class="progress active" style="width:100%; margin-top: -20px; padding-top: 0;">
+        <div class="progress-bar" width="40%"></div>
+    </div>
+    <!--<button class="points" type="button" class="btn btn-success" style="width:150px;">Click for points</button>-->
+
+    <!-- BOTTOM NAVIGATION -->
+    <div id="navigation" class="navbar-fixed-bottom" style="width: 100%">
+        <ul class="nav nav-tabs" style="width:100%">
+            <li><a href="#find_people" data-toggle="tab"><span class="fa fa-search nav-icon"></span></br>Find</a></li>
+            <li><a href="#inbox" data-toggle="tab"><span class="fa fa-envelope nav-icon"></span></br>Inbox</a></li>
+            <li><a href="#friends" data-toggle="tab"><span class="fa fa-users nav-icon"></span></br>Friends</a></li>
+            <li><a href="#profile" data-toggle="tab"><span class="fa fa-user nav-icon"></span></br>Profile</a></li>
+        </ul>
+    </div>
+    <div class="view-profile">
+
+    </div>
+
+
+    <div class="tab-content">
+        <!-- FIND PEOPLE PAGE -->
+        <div class="tab-pane active" id="find_people">
+            <div class="container-main">
+                {{#each people}}
+                    <a href="/user_profile/{{name}}" class="friend_profile">
+                        <div class="row container">
+                            <div class="col-xs-4">
+                                <img src={{imageURL}} class="img-responsive img-rounded">
+                            </div>
+                            <div class="col-xs-8">
+                                <h4>{{name}}</h4>
+                                <p>{{title}}</p>
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                {{/each}}
+            </div>
+        </div><!-- end find people page -->
+
+
+        <!-- USER PROFILE PAGE -->
+
+
+
+        <!-- INBOX PAGE -->
+        <div class="tab-pane" id="inbox">
+
+        </div><!-- end inbox page -->
+
+        <!-- FRIENDS PAGE -->
+        <div class="tab-pane" id="friends">
+            <div class="container-main">
+                {{#each friends}}
+                    <a href="/user_profile_contact/{{name}}" class="friend_profile">
+                        <div class="row container">
+                            <div class="col-xs-4">
+                                <img src={{imageURL}} class="img-responsive img-rounded" >
+                            </div>
+                            <div class="col-xs-8">
+                                <h4>{{name}}</h4>
+                                <p>{{title}}</p>
+                            </div>
+                        </div>
+                    </a>
+                    <hr>
+                {{/each}}
+            </div>
+        </div><!-- end friends page -->
+
+        <!-- PROFILE PAGE -->
+        <div class="tab-pane" id="profile">
+            <div class ="container-main">
+                <div class="row profile-content">
+                    <div class="col-xs-5">
+                        <img id="profile-image" src="images/defaultprofile.png" alt="your image" src="images/defaultprofile.png"/>
+                        <input type='file' onchange="readURL(this);" />
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="name-tag">
+                            <img class=".img-responsive" src="images/nametag.png">
+                            <h4><span id="my-name"></span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="container profile-content">
+                    <div class="row col-xs-12">
+                        <h4><span id="my-title"></span></h4>
+                        <p><span id="my-bio"></span></p>
+                        </br>
+                        <h5>Interests:</h5>
+                        <span id="my-interests"></span>
+
+                    </div>
+                    <div class="row col-xs-12 profile-content" style="text-align: center">
+                        <!-- <h4>Social Points</h4>
+                         <p style="font-size: 50px">328</p>-->
+                    </div>
+                    <div class="row col-xs-12 profile-content" style="text-align: center;">
+                        <img class="medal" src="images/badge.png"/>
+                    </div>
+                </div>
+            </div>
+        </div><!-- end profile page-->
+
+
+        <!-- BADGE MODAL -->
+        <div class="modal fade bs-example-modal-sm badge-notification" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    Congrats! You earned a badge!</br>
+                    <img src="images/badge.png" style="width: 20%; margin: 10px"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 </body>
 	<script src="js/jquery-1.11.0.js"></script>

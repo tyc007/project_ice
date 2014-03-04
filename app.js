@@ -63,6 +63,7 @@ app.get('/my_friends', my_friends.view);
 app.get('/signup', signup.view);
 app.get('/user_profile', user_profile.userProfile);
 app.get('/user_profile/:name', user_profile.userProfile);
+app.get('/user_profile_contact_round', user_profile_contact.viewRound);
 app.get('/user_profile_contact/:name', user_profile_contact.userProfile);
 app.get('/your_profile', your_profile.view);
 app.post('/delete_user/:id', alerts.delete);

@@ -1,8 +1,14 @@
 var data = require("../friends.json");
 
 exports.view = function(req, res){
+    data.round = false;
     res.render('user_profile_contact');
 };
+
+exports.viewRound = function(req, res){
+    data.round = true;
+    res.render('index', projects);
+}
 
 exports.userProfile = function(req, res){
     var name = req.params.name;
