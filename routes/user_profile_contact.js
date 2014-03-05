@@ -7,7 +7,7 @@ exports.view = function(req, res){
 
 exports.viewRound = function(req, res){
     data.round = true;
-    res.render('index', projects);
+    res.render('user_profile_contact');
 }
 
 exports.userProfile = function(req, res){

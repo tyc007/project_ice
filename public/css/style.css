@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Pacifico);
 @import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 /***********************************************/
 /************** GENERAL STYLES *****************/
@@ -8,6 +9,7 @@
 
 body {
     color: #000000;
+    background-color: #f1f1f1;
     font-family: 'Lato', sans-serif;
 }
 
@@ -15,8 +17,15 @@ h1,h2,h3,h4,h5 {
     color: #000000;
 }
 
+h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
 .container-main {
     margin-bottom: 140px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -90,6 +99,7 @@ h1,h2,h3,h4,h5 {
 /***********************************************/
 .navbar {
     background-color: #33373B;
+    background-color: #be3a2b;
 }
 
 #header-logo {
@@ -134,7 +144,7 @@ h1,h2,h3,h4,h5 {
     display: table;
     table-layout: fixed;
     float:none;
-    height: 60px;
+    height: 50px;
 }
 
 .navbar-icon {
@@ -153,11 +163,11 @@ h1,h2,h3,h4,h5 {
 
 .nav li {
     width: 25%;
-    height: 50px;
+    height: 40px;
 }
 
 .nav li a {
-    font-size: 12px;
+    font-size: 9px;
 }
 
 /***********************************************/
@@ -174,6 +184,10 @@ h1,h2,h3,h4,h5 {
 .medal {
     width: 60px;
     margin: 0 1em;
+}
+
+#my-name {
+    font-family: 'Pacifico', sans-serif;
 }
 
 /***********************************************/
@@ -205,3 +219,61 @@ h1,h2,h3,h4,h5 {
     height: 100%;
 }
 
+
+/*********************************************/
+/*************** PEOPLE PAGE *****************/
+/*********************************************/
+.name {
+
+}
+
+.distance {
+    font-size: 9px;
+    color: grey;
+    margin: 0;
+    padding: 0
+}
+
+.title {
+    color: #000000;
+    font-size: 12px;
+    margin: 0.3em auto;
+    padding: 0;
+}
+
+.people-img {
+    border: 1px solid grey;
+}
+
+
+/*********************************************/
+/************** FRIENDS PAGE *****************/
+/*********************************************/
+.text-over-image {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    background-color: rgba(51, 55, 59, 0.6);
+    padding: 5px 10px;
+    display: inline;
+    width: 32%;
+}
+
+.text-over-image p {
+    font-size: 9px;
+}
+
+/*.friend-gallery {
+    width: 32.7%;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}*/
+
+
+.friend-section {
+    margin-left: 10px;
+    font-size: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+}
