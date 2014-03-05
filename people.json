@@ -68,6 +68,38 @@
             "imageURL": "/images/scarlett.jpg"
         },
         {
+            "name": "Michael Halpert",
+            "message": "what' up?",
+            "title": "Engineering student at UCSD",
+            "profile": "I'm a 4th year at UCSD. I'm from Idaho so living in a beach city now is great!",
+            "interest": [ "Designing", "Programming", "Cycling" ],
+            "imageURL": "/images/michael.jpg"
+        },
+        {
+            "name": "Angela Howard",
+            "message": "how you doing stranger?",
+            "title": "Neuroscience student at UCSD",
+            "profile": "I'm a transfer student from Orange County that loves to be in the water. Whether I'm surfing or swimming I'll be having a great time.",
+            "interest": [ "Swimming", "Surfing", "Knitting" ],
+            "imageURL": "/images/angela.jpg"
+        },
+        {
+            "name": "Jim Scott",
+            "message": "hello!",
+            "title": "HCI student at UCSD",
+            "profile": "I love designing websites on my free time. If I'm not doings that then I'm bloggin about website design.",
+            "interest": [ "Basketball", "Canoeing", "Blogging" ],
+            "imageURL": "/images/jim.jpg"
+        },
+        {
+            "name": "Ryan Beesly",
+            "message": "hey hey hey :)",
+            "title": "Biology student at UCSD",
+            "profile": "I'm originally from NY but moved to SD 3 years ago. I'll be completing my Bachelors in bio real soon, and I'll be taking the MCAT this year for Med. school.",
+            "interest": [ "Baseball", "Soccer", "Stargazing" ],
+            "imageURL": "/images/ryan.jpg"
+        },
+        {
             "name": "Taylor Saldana",
             "message": "Hi! I think you're in my class. I see you around a lot.",
             "title": "Computer Science student at UCSD",
