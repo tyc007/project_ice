@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     })
 
-    setInterval(notify, 5000);
+    setInterval(notify, 75000);
 
     /*setTimeout(function(){
         $('.badge-notification').modal('show');
@@ -60,7 +60,7 @@ $(document).ready(function() {
 })
 
 function notify(){
-    setTimeout($('.friend-notification').modal('show'), 5000);
+    setTimeout($('.friend-notification').modal('show'), 75000);
 }
 
 function loadProfile(e) {
