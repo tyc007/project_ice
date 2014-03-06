@@ -1,4 +1,4 @@
-var data = require("../friends.json");
+var data = require("../people.json");
 
 exports.view = function(req, res){
     data.round = false;

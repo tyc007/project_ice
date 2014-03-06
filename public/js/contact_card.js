@@ -19,5 +19,5 @@ $( ".contact-button" ).click(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-    console.log("Javascript connected!");
+    console.log("User Profile contact page");
 }

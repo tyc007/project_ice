@@ -22,8 +22,6 @@
 	<link href="css/bootstrap-theme.css" rel="stylesheet">
     <link href="css/jquery-ui-1.10.4.custom.css">
     <link href="css/font-awesome.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
-    <link href="css/slider.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript">
@@ -121,29 +119,18 @@
 
         </div><!-- end inbox page -->
 
-        <!-- FRIENDS PAGE -->
+        <!-- CONNECTION PAGE -->
         <div class="tab-pane" id="friends">
             <div class="container-main">
                 <p class="friend-section">People met on <strong>03/04</strong> at <strong>UCSD</strong></p>
-                <a href="/user_profile_contact/{{name}}" class="friend_profile" >
                     <div >
                         {{#each friends}}
-                            <!--<div class="row container">
-                            <div class="col-xs-4">
-                                <img src={{imageURL}} class="img-responsive img-rounded" >
-                            </div>
-                            <div class="col-xs-8">
-                                <h4>{{name}}</h4>
-                                <p>{{title}}</p>
-                            </div>
-                        </div>
-                    <hr>-->
-                            <span class="text-over-image"><p>{{name}}</p></span>
-                            <img src={{imageURL}} class="img-responsive"  style="width: 32.5%; margin: 0; padding: 0; display: inline-block">
-
+                            <a href="/user_profile_contact/{{name}}" class="friend_profile" >
+                                <span class="text-over-image"><p>{{name}}</p></span>
+                                <img src={{imageURL}} class="img-responsive"  style="width: 32.5%; margin: 0; padding: 0; display: inline-block">
+                            </a>
                         {{/each}}
                     </div>
-                </a>
             </div>
         </div><!-- end friends page -->
 
@@ -242,6 +229,5 @@
 </body>
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap-slider.js"></script>
     <script src="js/index.js"></script>
 </html>
