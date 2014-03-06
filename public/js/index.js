@@ -31,7 +31,7 @@ $(document).ready(function() {
 
     })
 
-    //setInterval(notify, 5000);
+    setInterval(notify, 5000);
 
 
     $('.some-popover-link').popover({
@@ -68,6 +68,11 @@ $(document).ready(function() {
         $(".friend-notifcation-b").modal('show');
         $('.notifications').tooltip('hide');
     });
+
+    $(".accept-btn, .decline-btn").click(function(){
+        $(".friend-notifcation-b").modal('hide');
+        $(".friend-notification").modal('hide');
+    })
 
 
 })
