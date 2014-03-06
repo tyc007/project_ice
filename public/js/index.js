@@ -11,6 +11,11 @@ $(document).ready(function() {
     initializePage();
     loadTab();
 
+    // For Google Analytics
+    $(".accept-btn").click(function(){
+        ga("send", "event", "accept-btn", "click");
+    });
+
 
     $('.points').click(function () {
         //alert(points);
@@ -31,7 +36,7 @@ $(document).ready(function() {
 
     })
 
-    setInterval(notify, 5000);
+    setInterval(notify, 75000);
 
 
     $('.some-popover-link').popover({
@@ -62,7 +67,7 @@ $(document).ready(function() {
 
     setTimeout(function(){
         $('.notifications').tooltip('show');
-    },15000)
+    },75000)
 
     $("#alert-tab").click(function() {
         $(".friend-notifcation-b").modal('show');
