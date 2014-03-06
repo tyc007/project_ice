@@ -28,10 +28,6 @@ $(document).ready(function() {
 
     setInterval(notify, 75000);
 
-    /*setTimeout(function(){
-        $('.badge-notification').modal('show');
-    },3000)*/
-
 
     $('.some-popover-link').popover({
         container: 'body',
