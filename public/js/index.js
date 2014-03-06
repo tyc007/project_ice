@@ -20,14 +20,20 @@ $(document).ready(function() {
         }
     })
 
+
+
     $('.badge-notification').on('hidden.bs.modal', function () {
         points = 0;
         $('.progress-bar').width(points + '%').text(points);
 
     })
 
-    setInterval(notify, 75000);
+    setInterval(notify, 5000);
 
+    setTimeout(function(){
+        $('.notifications').tooltip('toggle');
+    },15000)
+    //setTimeout($('.notifications').tooltip('toggle'), 5000);
 
     $('.some-popover-link').popover({
         container: 'body',
@@ -52,11 +58,13 @@ $(document).ready(function() {
 
     $('.nav-tabs').click( showTab);
 
+    $(".notifications").tooltip().off();
 
 })
 
 function notify(){
     setTimeout($('.friend-notification').modal('show'), 75000);
+
 }
 
 function loadProfile(e) {
@@ -72,6 +80,20 @@ function showTab(e) {
 
 }
 
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#profile-image')
+                .attr('src', e.target.result)
+                .css({'width':'100%'});
+
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
 
 /*
  * Function that is called when the document is ready.
