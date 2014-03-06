@@ -12,9 +12,7 @@ $(".alert").hide();
 // Contact User Button that changes after click
 $( ".contact-button" ).click(function() {
     console.log(this);
-    $(this).prop('disabled', true);
     $(this).text("Greeting Pending");
-    $("#request-sent").show("slow");
 });
 
 

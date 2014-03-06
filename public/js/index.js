@@ -11,7 +11,9 @@ $(document).ready(function() {
     initializePage();
     loadTab();
 
+
     $('.points').click(function () {
+        //alert(points);
         points = points + 10;
         $('.progress-bar').width(points + '%');
         if(points == 100)
@@ -29,7 +31,7 @@ $(document).ready(function() {
 
     })
 
-    setInterval(notify, 5000);
+    //setInterval(notify, 5000);
 
 
     $('.some-popover-link').popover({
@@ -51,8 +53,7 @@ $(document).ready(function() {
         });
     });
 
-    $('.friend_profile').click( loadProfile);
-
+    $('.load-view').click( loadView);
 
     $('.nav-button').click( showTab);
     $(".notifications").tooltip().off();
@@ -76,9 +77,10 @@ function notify(){
 
 }
 
-function loadProfile(e) {
+function loadView(e) {
     e.preventDefault();
     var page_url=$(this).prop('href');
+    //alert(page_url);
     $('.view-profile').load(page_url);
     $('.tab-content').hide();
 }

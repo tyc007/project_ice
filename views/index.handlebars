@@ -35,6 +35,7 @@
 </head>
 
 <body>
+
     <!-- HEADER -->
     {{#if alertTab}}
         <!-- B VERSION HEADER -->
@@ -57,11 +58,10 @@
         </div>
 
     {{else}}
-        <!-- A VERSION HEADER -->
+        <!-- HEADER -->
         <div class="navbar navbar-static-top" id="header" role="navigation">
             <div class="row">
                 <div class="col-xs-4 pull-left" >
-
                 </div>
                 <div class="col-xs-4" id="header-logo">
                     <h1 id="header-logo-text">hello</h1>
@@ -74,6 +74,8 @@
             </div>
         </div>
     {{/if}}
+
+
 
 
 
@@ -105,7 +107,7 @@
         <div class="tab-pane active" id="find_people">
             <div class="container-main">
                 {{#each people}}
-                    <a href="/user_profile/{{name}}" class="friend_profile">
+                    <a href="/user_profile/{{name}}" class="load-view">
                         <div class="row container">
                             <div class="col-xs-5">
                                 <img src={{imageURL}} class="img-responsive img-rounded people-img">
@@ -138,7 +140,7 @@
                 <p class="friend-section">People met on <strong>03/04</strong> at <strong>UCSD</strong></p>
                     <div >
                         {{#each friends}}
-                            <a href="/user_profile_contact/{{name}}" class="friend_profile" >
+                            <a href="/user_profile_contact/{{name}}" class="load-view" >
                                 <span class="text-over-image"><p>{{name}}</p></span>
                                 <img src={{imageURL}} class="img-responsive"  style="width: 32.5%; margin: 0; padding: 0; display: inline-block">
                             </a>
