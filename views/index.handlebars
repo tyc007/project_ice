@@ -36,15 +36,14 @@
 
 <body>
 
-
-        <!-- B VERSION HEADER -->
+        <!-- HEADER -->
         <div class="navbar navbar-static-top" id="header" role="navigation">
             <div class="row">
                 <div class="col-xs-4 pull-left" >
+                    <!-- B VERSION HEADER -->
                     {{#if alertTab}}
                     <a href="/alerts" class="load-view" data-toggle="tooltip" data-placement="right">
                          <span  class="fa fa-bell-o load-view" style="font-size: 24px; color: white"></span>
-
                     {{/if}}
                 </div>
                 <div class="col-xs-4" id="header-logo">
@@ -193,6 +192,32 @@
 
 
         {{#if alertTab}}
+            <div class="modal fade bs-example-modal-lg friend-notifcation-b" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <a href="#" class="friend_profile">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <img src="images/mike.jpg"/>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <p class="name">Mike says hi!</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <a href="#">accept</a>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <a href="#">decline</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
         {{else}}
         <!-- FRIEND REQUEST MODAL -->
@@ -207,7 +232,6 @@
                                     </div>
                                     <div class="col-xs-7">
                                         <p class="name">Mike says hi!</p>
-                                        <p class="distance">within 0.4 miles nearby</p>
                                     </div>
                                 </div>
                                 <div class="row">
