@@ -31,10 +31,6 @@ $(document).ready(function() {
 
     setInterval(notify, 5000);
 
-    setTimeout(function(){
-        $('.notifications').tooltip('toggle');
-    },15000)
-    //setTimeout($('.notifications').tooltip('toggle'), 5000);
 
     $('.some-popover-link').popover({
         container: 'body',
@@ -61,6 +57,17 @@ $(document).ready(function() {
     $('.nav-button').click( showTab);
     $(".notifications").tooltip().off();
 
+    // for B testing alert tab
+
+    setTimeout(function(){
+        $('.notifications').tooltip('show');
+    },15000)
+
+    $("#alert-tab").click(function() {
+        $(".friend-notifcation-b").modal('show');
+        $('.notifications').tooltip('hide');
+    });
+
 
 })
 
@@ -84,7 +91,13 @@ function showTab(e) {
     $('.view-profile').empty();
     $('.tab-content').show();
 
+    $("#alert-tab").click(function() {
+        $('.friend-notifcation-b').modal('show');
+    });
+
 }
+
+
 
 
 function loadTab(e) {
