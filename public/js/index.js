@@ -11,18 +11,12 @@ $(document).ready(function() {
     initializePage();
 
     $('.points').click(function () {
-        //var val = Math.floor((Math.random() * 100)) + '%';
-
         points = points + 10;
-        // $('.progress-bar').width(points + '%').text(points);
         $('.progress-bar').width(points + '%');
         if(points == 100)
         {
             $('.badge-notification').modal('show');
-            //points = 0;
-            //$('.progress-bar').width(points + '%').text(points);
             badges++;
-
         }
     })
 
@@ -32,10 +26,12 @@ $(document).ready(function() {
 
     })
 
-    /*$('#inbox-popover').click(function(){
-        console.log('pop');
-        $('#inbox-popover').popover('toggle');
-    })*/
+    setInterval(notify, 5000);
+
+    /*setTimeout(function(){
+        $('.badge-notification').modal('show');
+    },3000)*/
+
 
     $('.some-popover-link').popover({
         container: 'body',
@@ -62,6 +58,10 @@ $(document).ready(function() {
 
 
 })
+
+function notify(){
+    setTimeout($('.friend-notification').modal('show'), 5000);
+}
 
 function loadProfile(e) {
     e.preventDefault();

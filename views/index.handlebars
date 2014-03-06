@@ -125,8 +125,8 @@
         <div class="tab-pane" id="friends">
             <div class="container-main">
                 <p class="friend-section">People met on <strong>03/04</strong> at <strong>UCSD</strong></p>
-                <a href="/user_profile_contact/{{name}}" class="friend_profile">
-                    <div style="margin: 0 auto; ">
+                <a href="/user_profile_contact/{{name}}" class="friend_profile" >
+                    <div >
                         {{#each friends}}
                             <!--<div class="row container">
                             <div class="col-xs-4">
@@ -139,7 +139,7 @@
                         </div>
                     <hr>-->
                             <span class="text-over-image"><p>{{name}}</p></span>
-                            <img src={{imageURL}} class="img-responsive" style="width: 32.5%; margin: 0; padding: 0; display: inline;" >
+                            <img src={{imageURL}} class="img-responsive"  style="width: 32.5%; margin: 0; padding: 0; display: inline-block">
 
                         {{/each}}
                     </div>
@@ -201,6 +201,36 @@
                 <div class="modal-content">
                     Congrats! You earned a badge!</br>
                     <img src="images/badge.png" style="width: 20%; margin: 10px"/>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FRIEND REQUEST MODAL -->
+        <div class="modal fade bs-example-modal-sm friend-notification" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                        <a href="#" class="friend_profile">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-xs-5">
+                                        <img src="images/mike.jpg"/>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <p class="name">Mike says hi!</p>
+                                        <p class="distance">within 0.4 miles nearby</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <a href="#">accept</a>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <a href="#">decline</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                 </div>
             </div>
         </div>

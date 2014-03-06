@@ -3,11 +3,13 @@ var data = require("../friends.json");
 exports.view = function(req, res){
     data.round = false;
     res.render('user_profile_contact');
+    console.log(round);
 };
 
 exports.viewRound = function(req, res){
     data.round = true;
     res.render('user_profile_contact');
+    console.log(round);
 }
 
 exports.userProfile = function(req, res){
