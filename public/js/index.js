@@ -9,6 +9,7 @@ var badges = 0;
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
     initializePage();
+    loadTab();
 
     $('.points').click(function () {
         points = points + 10;
@@ -50,8 +51,7 @@ $(document).ready(function() {
 
     $('.friend_profile').click( loadProfile);
 
-    $('.nav-tabs').click( showTab);
-
+    $('.nav-button').click( showTab);
 
 })
 
@@ -67,11 +67,29 @@ function loadProfile(e) {
 }
 
 function showTab(e) {
+    var page_url=$(this).prop('href');
+
+    window.location.replace(page_url);
+
     $('.view-profile').empty();
     $('.tab-content').show();
 
 }
 
+function loadTab(e) {
+    // Javascript to enable link to tab
+    var hash = document.location.hash;
+    var prefix = "tab_";
+    if (hash) {
+        $('.nav-tabs a[href='+hash.replace(prefix,"")+']').tab('show');
+    }
+
+// Change hash for page-reload
+    $('.nav-tabs a').on('shown', function (e) {
+        window.location.hash = e.target.hash.replace("#", "#" + prefix);
+    });
+
+}
 
 /*
  * Function that is called when the document is ready.
