@@ -9,7 +9,7 @@ $(document).ready(function(){
     var password = $('#password').val();
 
     var expDate = new Date();
-    expDate.setTime(expDate.getTime() + (3 * 60 * 1000)); //set to expire in 3 minutes
+    expDate.setTime(expDate.getTime() + (5 * 60 * 1000)); //set to expire in 3 minutes
 
     $.cookie('username', username, { expires: expDate});
     $.cookie('password', password, { expires: expDate});

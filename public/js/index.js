@@ -14,7 +14,8 @@ $(document).ready(function() {
     // For Google Analytics
     $(".accept-btn").click(function(){
         ga("send", "event", "accept-btn", "click");
-    });
+    })
+
 
 
     $('.points').click(function () {
@@ -36,7 +37,7 @@ $(document).ready(function() {
 
     })
 
-    setInterval(notify, 10000);
+    setInterval(notify, 30000);
 
 
     $('.some-popover-link').popover({
@@ -67,7 +68,7 @@ $(document).ready(function() {
 
     setTimeout(function(){
         $('.notifications').tooltip('show');
-    },10000)
+    },30000)
 
     $("#alert-tab").click(function() {
         $(".friend-notifcation-b").modal('show');
@@ -79,11 +80,30 @@ $(document).ready(function() {
         $(".friend-notification").modal('hide');
     })
 
+    // Cookies
+    /*var name = $.cookie('name');
+    var title = $.cookie('title');
+    var bio = $.cookie('bio');
+    var interests = $.cookie('interests');
+
+    var myName = document.getElementById("my-name");
+    myName.innerText = name;
+
+    var myTitle = document.getElementById("my-title");
+    myTitle.innerText = title;
+
+    var myBio = document.getElementById("my-bio");
+    myBio.innerText = bio;
+
+    var myInterests = document.getElementById("my-interests");
+    myInterests.innerText = interests;*/
+
+
 
 })
 
 function notify(){
-    setTimeout($('.friend-notification').modal('show'), 10000);
+    setTimeout($('.friend-notification').modal('show'), 30000);
 
 }
 
@@ -140,12 +160,14 @@ function readURL(input) {
         reader.readAsDataURL(input.files[0]);
     }
 
+
 }
 
 /*
  * Function that is called when the document is ready.
  */
 function initializePage() {
+
 
 }
 
