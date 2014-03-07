@@ -36,7 +36,7 @@ $(document).ready(function() {
 
     })
 
-    setInterval(notify, 75000);
+    setInterval(notify, 10000);
 
 
     $('.some-popover-link').popover({
@@ -67,7 +67,7 @@ $(document).ready(function() {
 
     setTimeout(function(){
         $('.notifications').tooltip('show');
-    },75000)
+    },10000)
 
     $("#alert-tab").click(function() {
         $(".friend-notifcation-b").modal('show');
@@ -83,7 +83,7 @@ $(document).ready(function() {
 })
 
 function notify(){
-    setTimeout($('.friend-notification').modal('show'), 75000);
+    setTimeout($('.friend-notification').modal('show'), 10000);
 
 }
 
