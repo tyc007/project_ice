@@ -26,10 +26,10 @@
     <link href="css/style.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="mmenu/src/css/jquery.mmenu.all.css" />
     <link typ="text/css" rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
-
 </head>
 
 <body>
+
         <!-- HEADER -->
         <div class="navbar navbar-static-top" id="header" role="navigation">
             <div class="row">
@@ -81,7 +81,7 @@
             <li><a href="#find_people" data-toggle="tab" class="nav-button"><span class="fa fa-search nav-icon"></span></br>Find</a></li>
             <li><a href="#friends" data-toggle="tab" class="nav-button"><span class="fa fa-users nav-icon"></span></br>Connections</a></li>
             <li><a href="#profile" data-toggle="tab" class="nav-button"><span class="fa fa-user nav-icon"></span></br>Profile</a></li>
-           <!-- <li><a href="#settings" data-toggle="tab" class="nav-button"><span class="fa fa-gear nav-icon"></span></br>Settings</a></li> -->
+            <li><a href="#settings" data-toggle="tab" class="nav-button"><span class="fa fa-gear nav-icon"></span></br>Settings</a></li>
         </ul>
     </div>
 
@@ -98,7 +98,7 @@
                     <a href="/user_profile/{{name}}" class="load-view">
                         <div class="row container">
                             <div class="col-xs-5">
-                                <img src={{imageURL}} class="img-responsive img-rounded people-img">
+                                <img src = {{imageURL}} class = "img-responsive img-rounded people-img"><
                             </div>
                             <div class="col-xs-7">
                                 <h4 class="name">{{name}}</h4>
@@ -139,7 +139,7 @@
                     </div>
                     <div class="col-xs-7">
                         <div class="name-tag">
-                            <img class=".img-responsive" src="images/nametag.png">
+                            <img class=".img-responsive" src="images/nametag.jpg">
                             <h4><span id="my-name">John Doe</span></h4>
                         </div>
                     </div>
@@ -153,26 +153,70 @@
                         <span id="my-interests">Food, Wine, Design</span>
 
                     </div>
-                    <div class="row col-xs-12 profile-content" style="text-align: center">
-                        <!-- <h4>Social Points</h4>
-                         <p style="font-size: 50px">328</p>-->
-                    </div>
                     <div class="row col-xs-12 profile-content" style="text-align: center;">
                         <img class="medal" src="images/badge.png"/>
                     </div>
                 </div>
             </div>
+            <!--<div class ="container-main">
+                <div class="row profile-content">
+                    <div class="col-xs-5">
+                        <img id="profile-image" src="images/defaultprofile.png" alt="your image" src="images/defaultprofile.png"/>
+                        <input type='file' onchange="readURL(this);" />
+                    </div>
+                    <div class="col-xs-7">
+                        <div class="name-tag">
+                            <img class=".img-responsive" src="images/nametag.png">
+                            <h4><span id="my-name"></span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="container profile-content">
+                    <div class="row col-xs-12">
+                        <h4><span id="my-title"></span></h4>
+                        <p><span id="my-bio"></span></p>
+                        </br>
+                        <h5>Interests:</h5>
+                        <span id="my-interests"></span>
+                    </div>
+                    <div class="row col-xs-12 profile-content" style="text-align: center;">
+                        <img class="medal" src="images/badge.png"/>
+                    </div>
+                </div>
+            </div>-->
         </div><!-- end profile page-->
 
         <!-- SETTINGS PAGE -->
         <div class="tab-pane" id="settings">
-            <div class="slider slider-horizontal" style="width: 50%">
-                <div class="slider-track">
-                    <div class="slider-selection" style="left: 0%; width: 20%;"></div>
-                    <div class="slider-handle round" style="left: 20%;"></div>
-                    <div class="slider-handle round hide" style="left: 0%;"></div>
-                </div>
+            <!--slider -->
+            <div class="settings-div">
+                <h4>Search Distance</h4>
+                <div class="slider slider-horizontal" style="width: 50%">
+                    <div class="slider-track">
+                        <div class="slider-selection" style="left: 0%; width: 20%;"></div>
+                        <div class="slider-handle round" style="left: 20%;"></div>
+                        <div class="slider-handle round hide" style="left: 0%;"></div>
+                    </div>
+                </div><!-- end slider -->
             </div>
+            <hr>
+            <div class="settings-div">
+                <div class="row">
+                    <div class="col-xs-10">
+                        <h4>Edit Profile</h4>
+                    </div>
+                    <div class="col-xs-2">
+                        <h4><span class="fa fa-chevron-circle-right" style="color:#7d858e; font-size: 24px"> </span></h4>
+                    </div>
+                </div>
+
+            </div>
+            <hr>
+            <div class="settings-div">
+                <a href="/login"><button class="btn" id="logout-btn">Log out</button></a>
+            </div>
+
+
         </div><!-- end inbox page -->
 
         {{#if alertTab}}
@@ -196,10 +240,16 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-xs-6">
-                                            <a href="#" class="accept-btn">accept</a>
+                                            <!--<a href="#" class="accept-btn">accept</a>-->
+                                            <a href="#" class="accept-btn">
+                                                <span class="fa fa-check-circle-o"></span>
+                                            </a>
                                         </div>
                                         <div class="col-xs-6">
-                                            <a href="#" class="decline-btn">decline</a>
+                                            <!--<a href="#" class="decline-btn">decline</a>-->
+                                            <a href="#" class="decline-btn">
+                                                <span class="fa fa-times-circle-o"></span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -222,15 +272,21 @@
                                         <img src="images/mike.jpg"/>
                                     </div>
                                     <div class="col-xs-7">
-                                        <p class="name">Mike says hi!</p>
+                                        <p style="font-size: 28px; color: #000000">Mike says hi!</p>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-6">
-                                        <a href="#" class="accept-btn">accept</a>
+                                        <!--<a href="#" class="accept-btn">accept</a>-->
+                                        <a href="#" class="accept-btn">
+                                            <span class="fa fa-check-circle-o"></span>
+                                        </a>
                                     </div>
                                     <div class="col-xs-6">
-                                        <a href="#" class="decline-btn">decline</a>
+                                        <!--<a href="#" class="decline-btn">decline</a>-->
+                                        <a href="#" class="decline-btn">
+                                            <span class="fa fa-times-circle-o"></span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -252,6 +308,8 @@
                 position: 'right'
             });
         });
-
     </script>
+    <script type="text/javascript" src="slider/js/bootstrapslider.js"></script>
+
+
 </html>

@@ -10,9 +10,11 @@ $(document).ready(function() {
     initializePage();
     loadTab();
 
+
     $('.progress-bar').width(70+'%');
 
     $('.points').click(function () {
+
         var $bar =  $('#progress-bar');
 
         var width = $bar.width();
@@ -25,17 +27,10 @@ $(document).ready(function() {
        {
            $('.modal').modal('hide');
            $('#badge-notification').modal('show');
-            //badges++
             $('.progress-bar').width(0 + '%');
         }
     })
 
-    /*
-    $('.badge-notification').on('hidden.bs.modal', function () {
-
-        $('.progress-bar').width(points + '%').text(points);
-
-    })*/
 
     //setInterval(notify, 30000);
 
@@ -72,7 +67,7 @@ $(document).ready(function() {
 
     $("#alert-tab").click(function() {
         $(".friend-notifcation-b").modal('show');
-        $('.notifications').tooltip('hide');
+        $('.notifications').tooltip('show');
     });
 
     $(".accept-btn, .decline-btn").click(function(){
@@ -98,13 +93,10 @@ $(document).ready(function() {
     var myInterests = document.getElementById("my-interests");
     myInterests.innerText = interests;*/
 
-
-
 })
 
 function notify(){
     setTimeout($('.friend-notification').modal('show'), 30000);
-
 }
 
 function loadView(e) {
@@ -129,6 +121,13 @@ function showTab(e) {
 
 }
 
+// For messaging menu
+$(function() {
+    $('nav#menu').mmenu({
+        position: 'right'
+    });
+});
+
 function loadTab(e) {
     // Javascript to enable link to tab
     var hash = document.location.hash;
@@ -143,24 +142,19 @@ function loadTab(e) {
     });
 }
 
+// For camera/file upload
 function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
-
         reader.onload = function (e) {
             $('#profile-image')
                 .attr('src', e.target.result)
                 .css({'width':'100%'});
         };
-
         reader.readAsDataURL(input.files[0]);
     }
-
 }
 
-/*
- * Function that is called when the document is ready.
- */
 function initializePage() {
 
 
