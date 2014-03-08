@@ -17,7 +17,7 @@ $(document).ready(function(){
         expDate.setTime(expDate.getTime() + (3 * 60 * 1000));
 
         // set cookies to expire in 1 day
-        $.cookie('name', name, { expires: expDate, path:'/'});
+        $.cookie('name', name, { expires: expDate, path:'/', domain: 'http://localhost/signup.html'});
         $.cookie('password', password, { expires: expDate, path:'/'});
         $.cookie('email', email, { expires : expDate, path:'/'});
         $.cookie('title', title, { expires : expDate, path:'/'});

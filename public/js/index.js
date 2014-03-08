@@ -12,14 +12,12 @@ $(document).ready(function() {
     loadTab();
 
     // For Google Analytics
-    $(".accept-btn").click(function(){
+    /*$(".accept-btn").click(function(){
         ga("send", "event", "accept-btn", "click");
-    })
-
+    })*/
 
 
     $('.points').click(function () {
-        //alert(points);
         points = points + 10;
         $('.progress-bar').width(points + '%');
         if(points == 100)
@@ -72,7 +70,7 @@ $(document).ready(function() {
 
     $("#alert-tab").click(function() {
         $(".friend-notifcation-b").modal('show');
-        $('.notifications').tooltip('hide');
+        $('.notifications').tooltip('show');
     });
 
     $(".accept-btn, .decline-btn").click(function(){
@@ -98,13 +96,10 @@ $(document).ready(function() {
     var myInterests = document.getElementById("my-interests");
     myInterests.innerText = interests;*/
 
-
-
 })
 
 function notify(){
     setTimeout($('.friend-notification').modal('show'), 30000);
-
 }
 
 function loadView(e) {
@@ -130,6 +125,12 @@ function showTab(e) {
 }
 
 
+// For messaging menu
+$(function() {
+    $('nav#menu').mmenu({
+        position: 'right'
+    });
+});
 
 
 function loadTab(e) {
@@ -146,26 +147,19 @@ function loadTab(e) {
     });
 }
 
+// For camera/file upload
 function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
-
         reader.onload = function (e) {
             $('#profile-image')
                 .attr('src', e.target.result)
                 .css({'width':'100%'});
-
         };
-
         reader.readAsDataURL(input.files[0]);
     }
-
-
 }
 
-/*
- * Function that is called when the document is ready.
- */
 function initializePage() {
 
 

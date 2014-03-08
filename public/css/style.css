@@ -68,6 +68,7 @@ h4 {
     .name-tag {
         position: relative;
         text-align: center;
+        margin-top: 30%;
     }
 
     .name-tag img {
@@ -162,7 +163,7 @@ h4 {
 }
 
 .nav li {
-    width: 33.3%;
+    width: 25%;
     height: 40px;
 }
 
@@ -217,6 +218,29 @@ h4 {
 
 #map-canvas {
     height: 100%;
+}
+
+/***********************************************/
+/*********** NOTIFCATIONS STYLES ***************/
+/***********************************************/
+.accept-btn {
+    font-size: 60px;
+    color: #70bcc4;
+}
+
+.decline-btn {
+    font-size: 60px;
+    color: #be3a2b;
+}
+
+.accept-btn:hover {
+    color: #70bcc4;
+    opacity: 0.6;
+}
+
+.decline-btn:hover {
+    color: #be3a2b;
+    opacity: 0.6;
 }
 
 
@@ -277,4 +301,27 @@ h4 {
     font-size: 12px;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 100;
+}
+
+
+/*********************************************/
+/************** SETTINGS PAGE ****************/
+/*********************************************/
+.settings-div {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#logout-btn {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #70bcc4;
+    text-transform: uppercase;
+    font-size: 14px;
+    background: #70bcc4;
+    color: #ffffff;
+}
+
+#logout-btn:hover {
+    opacity: 0.6;
 }
