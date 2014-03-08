@@ -3,7 +3,6 @@
  */
 
 'use strict';
-var points = 0;
 var badges = 0;
 
 // Call this function when the page loads (the "ready" event)
@@ -19,25 +18,31 @@ $(document).ready(function() {
 
 
     $('.points').click(function () {
-        //alert(points);
-        points = points + 10;
-        $('.progress-bar').width(points + '%');
-        if(points == 100)
-        {
-            $('.badge-notification').modal('show');
-            badges++;
+        var $bar =  $('#progress-bar');
+
+        var width = $bar.width();
+        var parentWidth = $bar.offsetParent().width();
+        var percent = 100*width/parentWidth;
+
+        $bar.width(percent  + 10 + '%');
+
+        if((percent  + 10) >= 100)
+       {
+            //$('.badge-notification').modal('show');
+            //badges++
+            $('.progress-bar').width(0 + '%');
         }
     })
 
 
 
     $('.badge-notification').on('hidden.bs.modal', function () {
-        points = 0;
+
         $('.progress-bar').width(points + '%').text(points);
 
     })
 
-    setInterval(notify, 30000);
+    //setInterval(notify, 30000);
 
 
     $('.some-popover-link').popover({
@@ -129,9 +134,6 @@ function showTab(e) {
 
 }
 
-
-
-
 function loadTab(e) {
     // Javascript to enable link to tab
     var hash = document.location.hash;
@@ -154,11 +156,15 @@ function readURL(input) {
             $('#profile-image')
                 .attr('src', e.target.result)
                 .css({'width':'100%'});
-
         };
 
         reader.readAsDataURL(input.files[0]);
     }
+
+function progressBarLogic()
+{
+
+}
 
 
 }
