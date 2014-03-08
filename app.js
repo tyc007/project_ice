@@ -13,12 +13,9 @@ var index = require('./routes/index');
 // Example route
 // var user = require('./routes/user');
 
-var add = require('./routes/add');
 var alerts = require('./routes/alerts');
-var chatting = require('./routes/chatting');
 var find_people = require('./routes/find_people');
 var login = require('./routes/login');
-var messages = require('./routes/messages');
 var my_friends = require('./routes/my_friends');
 var signup = require('./routes/signup');
 var user_profile = require('./routes/user_profile');
@@ -53,14 +50,9 @@ app.get('/b', index.viewAlertTab);
 // Example route
 // app.get('/users', user.list);
 
-app.get('/add', add.addFriend);
 app.get('/alerts', alerts.view);
 app.get('/alerts_old', alerts.viewOld);
-app.get('/chatting', chatting.view);
-app.get('/find_people', find_people.view);
-app.get('/#find_people', find_people.view);
 app.get('/login', login.view);
-app.get('/messages', messages.view);
 app.get('/my_friends', my_friends.view);
 app.get('/signup', signup.view);
 app.get('/user_profile', user_profile.userProfile);

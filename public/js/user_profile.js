@@ -11,7 +11,7 @@ $(".alert").hide();
 
 // Contact User Button that changes after click
 $( ".contact-button" ).click(function() {
-    console.log(this);
+
     $(this).text("Greeting Pending");
 });
 

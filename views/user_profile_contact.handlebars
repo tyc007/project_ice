@@ -30,6 +30,16 @@
 <body>
 
 <div class ="container-main">
+    <!-- BADGE MODAL -->
+    <div class="modal fade bs-example-modal-sm" id="badge-notification" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                Congrats! You earned a badge!</br>
+                <img src="images/badge.png" style="width: 20%; margin: 10px"/>
+            </div>
+        </div>
+    </div>
+
     <div id="meet-up-now-modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content" style="text-align: center">
@@ -66,10 +76,10 @@
         </div>
     {{else}}
         <div class="row profile-content" style="text-align: center">
-            <button class="btn btn-primary contact-button" data-toggle="modal" data-target="#meet-up-now-modal">
+            <button class="btn btn-primary contact-button points" data-toggle="modal" data-target="#meet-up-now-modal">
                 Meet Up Now
             </button>
-            <a href="#"><button class="btn btn-primary contact-button">
+            <a href="#"><button class="btn btn-primary contact-button points">
                 Message
             </button></a>
             <a href="https://www.facebook.com" target="_blank"><button class="btn btn-primary contact-button">

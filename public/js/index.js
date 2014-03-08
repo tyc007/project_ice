@@ -10,12 +10,7 @@ $(document).ready(function() {
     initializePage();
     loadTab();
 
-    // For Google Analytics
-    $(".accept-btn").click(function(){
-        ga("send", "event", "accept-btn", "click");
-    })
-
-
+    $('.progress-bar').width(70+'%');
 
     $('.points').click(function () {
         var $bar =  $('#progress-bar');
@@ -28,19 +23,19 @@ $(document).ready(function() {
 
         if((percent  + 10) >= 100)
        {
-            //$('.badge-notification').modal('show');
+           $('.modal').modal('hide');
+           $('#badge-notification').modal('show');
             //badges++
             $('.progress-bar').width(0 + '%');
         }
     })
 
-
-
+    /*
     $('.badge-notification').on('hidden.bs.modal', function () {
 
         $('.progress-bar').width(points + '%').text(points);
 
-    })
+    })*/
 
     //setInterval(notify, 30000);
 
@@ -160,12 +155,6 @@ function readURL(input) {
 
         reader.readAsDataURL(input.files[0]);
     }
-
-function progressBarLogic()
-{
-
-}
-
 
 }
 
