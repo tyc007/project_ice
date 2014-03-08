@@ -9,10 +9,7 @@ var badges = 0;
 $(document).ready(function() {
     initializePage();
     loadTab();
-
-
-    $('.progress-bar').width(70+'%');
-
+    
     $('.points').click(function () {
 
         var $bar =  $('#progress-bar');
@@ -129,12 +126,14 @@ $(function() {
 });
 
 function loadTab(e) {
+    $(document).scrollTop(0);
     // Javascript to enable link to tab
     var hash = document.location.hash;
     var prefix = "tab_";
     if (hash) {
         $('.nav-tabs a[href='+hash.replace(prefix,"")+']').tab('show');
     }
+
 
 // Change hash for page-reload
     $('.nav-tabs a').on('shown', function (e) {
