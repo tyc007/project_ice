@@ -10,11 +10,8 @@ $(document).ready(function() {
     initializePage();
     loadTab();
 
-    // For Google Analytics
-    /*$(".accept-btn").click(function(){
-        ga("send", "event", "accept-btn", "click");
-    })*/
 
+    $('.progress-bar').width(70+'%');
 
     $('.points').click(function () {
 
@@ -28,19 +25,12 @@ $(document).ready(function() {
 
         if((percent  + 10) >= 100)
        {
-            //$('.badge-notification').modal('show');
-            //badges++
+           $('.modal').modal('hide');
+           $('#badge-notification').modal('show');
             $('.progress-bar').width(0 + '%');
         }
     })
 
-
-
-    $('.badge-notification').on('hidden.bs.modal', function () {
-
-        $('.progress-bar').width(points + '%').text(points);
-
-    })
 
     //setInterval(notify, 30000);
 
@@ -130,8 +120,6 @@ function showTab(e) {
     });
 
 }
-
-
 
 // For messaging menu
 $(function() {

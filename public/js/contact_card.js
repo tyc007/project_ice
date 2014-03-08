@@ -5,14 +5,20 @@ $(document).ready(function() {
     initializePage();
 })
 
-/*
-// Contact User Button that changes after click
-$( ".contact-button" ).click(function() {
-    console.log(this);
-    $('#contactModal').modal('toggle')
-});
-*/
+$('.points').click(function () {
+    var $bar =  $('#progress-bar');
 
+    var width = $bar.width();
+    var parentWidth = $bar.offsetParent().width();
+    var percent = 100*width/parentWidth;
+
+    $bar.width(percent  + 10 + '%');
+
+    if((percent  + 10) >= 100)
+    {
+        $('.progress-bar').width(0 + '%');
+    }
+})
 
 
 /*
