@@ -3,6 +3,15 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
     initializePage();
+    $(".accept-btn, .decline-btn").click(function(){
+        $(".friend-notification").modal('hide');
+    })
+    $('.progressbartooltip').tooltip('show')
+
+    $(".accept-btn, .decline-btn").click(function(){
+
+        $(".friend-notification").modal('hide');
+    })
 })
 
 // Hide the point reward alert at start
