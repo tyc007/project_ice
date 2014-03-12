@@ -71,6 +71,7 @@ $(document).ready(function() {
         $(".friend-notifcation-b").modal('hide');
         $(".friend-notification").modal('hide');
     })
+    $('.progressbartooltip').tooltip('show')
 
     // Cookies
     /*var name = $.cookie('name');
