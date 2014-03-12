@@ -29,10 +29,8 @@ function deleteAlert(obj){
 
 
 $('#accept-btn').click(function(){
-    /*console.log($(this).attr('data-id'));
-    console.log($('#friend-alert').attr('row-id'));
-    $('#friend-alert').hide('medium');
-    $("#accepted").show("slow");*/
+    $.post('/api/new_friend', { name: "Paula", imageURL: "https://scontent-b-sjc.xx.fbcdn.net/hphotos-prn2/t1/1469750_10202497223292623_351132811_n.jpg"});
+
 })
 
 /*

@@ -68,6 +68,10 @@ h3 {
         margin: 1em auto;
     }
 
+    .name-in-name-tag {
+        font-family: 'Pacifico', sans-serif;
+    }
+
     .form-horizontal {
         margin-top: 30px;
         width: 80%
@@ -221,6 +225,23 @@ h3 {
     margin: 0 auto;
 }
 
+.contact-circle
+{
+    width:80px;
+    height:80px;
+    border-radius:250px;
+    font-size:14px;
+    color:#fff;
+    /*line-height:20px;*/
+    text-align:center;
+    background: transparent;
+    border-color: #70bcc4;
+    border-width: 5px;
+    color: #70bcc4;
+    font-weight: lighter;
+    margin: 1em;
+}
+
 .btn-circle {
     width: 30px;
     height: 30px;
@@ -230,6 +251,12 @@ h3 {
     line-height: 1.42;
     border-radius: 15px;
 }
+
+.contact-circle:hover {
+    background-color: #70bcc4;
+    color: #ffffff;
+}
+
 .accept-btn {
     font-size: 60px;
     color: #70bcc4;
@@ -378,3 +405,15 @@ h3 {
     margin: 0 auto;
 }
 
+/*********************************************/
+/************** MESSAGES PAGE ****************/
+/*********************************************/
+.mm-title {
+    color: #ffffff;
+}
+
+.messaging-name {
+    text-align: center;
+    margin-top: -30px;
+    font-weight: lighter;
+}

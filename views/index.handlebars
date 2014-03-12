@@ -55,12 +55,12 @@
 
     <nav id="menu" class="mm-right">
         <div>
-            <h4 class="mm-title" style="text-align: center">MESSAGES</h4>
+            <h4 class="mm-title" style="text-align: center">Messages</h4>
                 <ul>
                 {{#each friends}}
                     <li style="padding: 5px 30px">
                         <img src={{imageURL}}  class="img-responsive img-rounded" style="width: 50px"/>
-                        <p style="text-align: center; margin-top: -30px">{{name}}</p>
+                        <p class="messaging-name">{{name}}</p>
                     </li>
                 {{/each}}
                 </ul>
@@ -71,8 +71,8 @@
 
 
     <div class="progress active" style="width:100%; margin-top: -20px; padding-top: 0;">
-        <div class="progress-bar" id="progress-bar" ></div>
-        <p style="color: #c4c4c4; position: absolute; margin: 2px 0 0 10px; font-size: 10px; vertical-alignment: center"> Social 'Meeter' </p>
+        <div class="progress-bar" class="progress-bar" ></div>
+        <p style="color: #c4c4c4; position: absolute; margin: 2px 0 0 10px; font-size: 10px; vertical-alignment: center"> Social Meter </p>
     </div>
     <!--<button class="points" type="button" class="btn btn-success" style="width:150px;">Click for points</button>-->
 

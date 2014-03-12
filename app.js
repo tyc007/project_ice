@@ -61,6 +61,7 @@ app.get('/user_profile_contact_round/:name', user_profile_contact.viewRound);
 app.get('/user_profile_contact/:name', user_profile_contact.userProfile);
 app.get('/your_profile', your_profile.view);
 app.post('/delete_user/:id', alerts.delete);
+app.post('/api/new_friend', index.addFriend);
 
 
 http.createServer(app).listen(app.get('port'), function(){
