@@ -29,7 +29,7 @@ $(document).ready(function() {
     })
 
 
-    //setInterval(notify, 30000);
+    setInterval(notify, 30000);
 
 
     $('.some-popover-link').popover({
