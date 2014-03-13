@@ -11,7 +11,6 @@ $(document).ready(function() {
     loadTab();
     
     $('.points').click(function () {
-
         var $bar =  $('#progress-bar');
 
         var width = $bar.width();
@@ -29,7 +28,7 @@ $(document).ready(function() {
     })
 
 
-    setInterval(notify, 30000);
+    setInterval(notify, 60000);
 
 
     $('.some-popover-link').popover({
@@ -60,7 +59,7 @@ $(document).ready(function() {
 
     setTimeout(function(){
         $('.notifications').tooltip('show');
-    },30000)
+    },60000)
 
     $("#alert-tab").click(function() {
         $(".friend-notifcation-b").modal('show');
@@ -94,7 +93,7 @@ $(document).ready(function() {
 })
 
 function notify(){
-    setTimeout($('.friend-notification').modal('show'), 30000);
+    setTimeout($('.friend-notification').modal('show'), 60000);
 }
 
 function loadView(e) {
