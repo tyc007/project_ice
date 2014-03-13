@@ -43,9 +43,22 @@
     <div id="meet-up-now-modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content" style="text-align: center">
-                <!--<img id="meet-up-arrow" src="../images/map.png"/>-->
-                <div id="map-canvas" style="height: 300px"></div>
+                <img id="meet-up-arrow" src="../images/map.png"/>
+                <!-- <div id="map-canvas" style="height: 300px"></div> -->
             </div>
+
+        </div>
+    </div>
+
+    <div id="message-modal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content" style="text-align: center">
+                <form id="modal-form" accept-charset="UTF-8" data-remote="true" method="post">
+                    <input name="message" value="Say hello!" />
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Send</button>
+                </form>
+            </div>
+
         </div>
     </div>
 
@@ -61,33 +74,19 @@
         </div>
     </div>
 
-    {{#if round}}
-
-        <div class="row profile-content" style="text-align: center">
-            <button class="btn-circle" data-toggle="modal" data-target="#meet-up-now-modal">
-                Meet Up Now
-            </button>
-            <a href="/chatting"><button class="btn-circle">
-                Message
-            </button></a>
-            <a href="https://www.facebook.com" target="_blank"><button class="btn-circle">
-                Facebook
-            </button></a>
-        </div>
-    {{else}}
         <div class="row profile-content" id="contactcard">
             <h4>CONTACT CARD</h4>
             <button class="contact-circle points" data-toggle="modal" data-target="#meet-up-now-modal">
                 Meet Up
             </button>
-            <a href="#"><button class="contact-circle points">
+            <a href="#"><button class="contact-circle points" data-toggle="modal" data-target="#message-modal">
                 Message
             </button></a>
             <a href="https://www.facebook.com" target="_blank"><button class="contact-circle points">
                 Facebook
             </button></a>
         </div>
-    {{/if}}
+
 
 
     <div class="container profile-content">

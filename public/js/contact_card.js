@@ -15,6 +15,7 @@ $(document).ready(function() {
     })
 })
 
+
 $('.points').click(function () {
     var $bar =  $('#progress-bar');
 
