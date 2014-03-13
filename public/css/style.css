@@ -360,6 +360,13 @@ h3 {
     margin: 10px;
 }
 
+.break-ice-btn {
+    background-color: #70bcc4;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    color: #ffffff;
+}
 
 
 /*********************************************/
