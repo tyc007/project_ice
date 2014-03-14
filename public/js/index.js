@@ -13,6 +13,7 @@ $(document).ready(function() {
     $('.slider').slider()
         .on('slide', function(ev){
             $('#slider-value').val(ev.value);
+            $('.tooltip').hide();
         });
     
     $('.points').click(function () {
