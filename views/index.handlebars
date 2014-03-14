@@ -26,6 +26,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="mmenu/src/css/jquery.mmenu.all.css" />
     <link typ="text/css" rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
+    <link typ="text/css" rel="stylesheet" href="css/slider.css"/>
 </head>
 
 <body>
@@ -193,15 +194,21 @@
             <!--slider -->
             <div class="container-main">
                 <div class="settings-div">
-                    <h4>Search Distance</h4>
-                    <div class="slider slider-horizontal" style="width: 50%">
-                        <div class="slider-track">
-                            <div class="slider-selection" style="left: 0%; width: 20%;"></div>
-                            <div class="slider-handle round" style="left: 20%;"></div>
-                            <div class="slider-handle round hide" style="left: 0%;"></div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h4>Distance</h4>
+                            <div class="well" style="margin-bottom: -5%;">
+                                Filter by mile:
+
+                                <div class="slider slider-horizontal">
+                                    <input type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" >
+                                </div>
+                                <input type="text" id="slider-value" style="margin-left: 3%"> <b> Miles</b>
+                            </div>
                         </div>
-                    </div><!-- end slider -->
+                    </div>
                 </div>
+
                 <hr>
                 <div class="settings-div">
                     <div class="row">
@@ -217,7 +224,8 @@
                 <hr>
                 <div class="settings-div">
                     <h4>Help</h4>
-                    <div>
+                    <hr>
+                    <div style="font-size: 12px">
                         <p>
                         Want to know how to earn points and badges?
                         </p>
@@ -328,6 +336,7 @@
 	<script src="js/jquery-1.11.0.js"></script>
 	<script src="js/bootstrap.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/bootstrap-slider.js"></script>
     <script type="text/javascript" src="mmenu/src/js/jquery.mmenu.min.all.js"></script>
     <script type="text/javascript">
         $(function() {
@@ -336,7 +345,6 @@
             });
         });
     </script>
-    <script type="text/javascript" src="slider/js/bootstrapslider.js"></script>
 
 
 </html>

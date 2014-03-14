@@ -9,6 +9,12 @@ var badges = 0;
 $(document).ready(function() {
     initializePage();
     loadTab();
+
+    $('.slider').slider()
+        .on('slide', function(ev){
+            $('#slider-value').val(ev.value);
+            $('.tooltip').hide();
+        });
     
     $('.points').click(function () {
         var $bar =  $('#progress-bar');
