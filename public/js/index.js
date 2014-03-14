@@ -9,6 +9,8 @@ var badges = 0;
 $(document).ready(function() {
     initializePage();
     loadTab();
+
+    $('.slider').slider()
     
     $('.points').click(function () {
         var $bar =  $('#progress-bar');
