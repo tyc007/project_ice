@@ -60,7 +60,7 @@
     <div class ="container-main">
         <div class="row profile-content">
             <div class="col-xs-5">
-                <img id="profile-image" src="images/defaultprofile.png" alt="your image" src="images/defaultprofile.png"/>
+                <img id="profile-image" src="images/defaultprofile.png" alt="your image" src="images/paula.jpg"/>
                 <input type='file' onchange="readURL(this);" />
             </div>
             <div class="col-xs-7">
@@ -101,8 +101,39 @@
                 <a href="/your_profile" class="btn btn-primary">Profile</a>
             </div>
         </div>
+        <div class="modal fade bs-example-modal-sm friend-notification" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <a href="#" class="friend_profile">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-5">
+                                    <img src="images/mike.jpg"/>
+                                </div>
+                                <div class="col-xs-7">
+                                    <p style="font-size: 20px; color: #000000">Mike says hi!</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <!--<a href="#" class="accept-btn">accept</a>-->
+                                    <a href="#" class="accept-btn">
+                                        <span class="fa fa-check-circle-o"></span>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6">
+                                    <!--<a href="#" class="decline-btn">decline</a>-->
+                                    <a href="#" class="decline-btn">
+                                        <span class="fa fa-times-circle-o"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-
 </body>
 <script src="js/jquery-1.11.0.js"></script>
 <script src="js/jquery.cookie.js"></script>
