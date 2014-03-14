@@ -15,6 +15,10 @@ $(document).ready(function() {
     })
 })
 
+var randomnumber = Math.floor(Math.random()*11) * 10;
+
+$('#friend-progress-bar').width(randomnumber + '%');
+
 
 $('.points').click(function () {
     var $bar =  $('#progress-bar');
