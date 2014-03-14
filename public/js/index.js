@@ -9,16 +9,9 @@ var badges = 0;
 $(document).ready(function() {
     initializePage();
     loadTab();
-
-    $('.slider').slider()
-        .on('slide', function(ev){
-            $('#slider-value').val(ev.value);
-            $('.tooltip').hide();
-        });
     
     $('.points').click(function () {
         var $bar =  $('#progress-bar');
-
         var width = $bar.width();
         var parentWidth = $bar.offsetParent().width();
         var percent = 100*width/parentWidth;
@@ -29,7 +22,7 @@ $(document).ready(function() {
        {
            $('.modal').modal('hide');
            $('#badge-notification').modal('show');
-            $('.progress-bar').width(0 + '%');
+           $('.progress-bar').width(0 + '%');
         }
     })
 
@@ -96,6 +89,11 @@ $(document).ready(function() {
     var myInterests = document.getElementById("my-interests");
     myInterests.innerText = interests;*/
 
+    $('.slider').slider()
+        .on('slide', function(ev){
+            $('#slider-value').val(ev.value);
+            $('.tooltip').hide();
+        });
 })
 
 function notify(){
