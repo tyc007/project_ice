@@ -11,6 +11,9 @@ $(document).ready(function() {
     loadTab();
 
     $('.slider').slider()
+        .on('slide', function(ev){
+            $('#slider-value').val(ev.value);
+        });
     
     $('.points').click(function () {
         var $bar =  $('#progress-bar');
