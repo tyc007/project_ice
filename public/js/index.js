@@ -22,7 +22,7 @@ $(document).ready(function() {
        {
            $('.modal').modal('hide');
            $('#badge-notification').modal('show');
-           $('.progress-bar').width(0 + '%');
+           $('#progress-bar').width(0 + '%');
         }
     })
 

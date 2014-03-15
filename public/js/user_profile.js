@@ -24,7 +24,8 @@ $( ".contact-button" ).click(function() {
     $(this).text("Greeting Pending");
 });
 
-
+var randomnumber = Math.floor(Math.random()*11) * 10;
+$('#friend-progress-bar').width(randomnumber + '%');
 
 /*
  * Function that is called when the document is ready.
